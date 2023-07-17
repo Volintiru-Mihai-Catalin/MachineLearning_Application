@@ -1,0 +1,26 @@
+17/07/2023 13:24:58:INFO:Program has started!
+17/07/2023 13:26:06:INFO:Program has started!
+17/07/2023 13:26:06:ERROR:name 'check_path_exists' is not defined
+17/07/2023 13:26:06:INFO:Program has ended!
+17/07/2023 13:26:58:INFO:Program has started!
+17/07/2023 13:26:58:INFO:Program has ended!
+17/07/2023 13:27:08:INFO:Program has started!
+17/07/2023 13:27:08:ERROR:name 'check_path_exists' is not defined
+17/07/2023 13:27:08:INFO:Program has ended!
+17/07/2023 13:27:20:INFO:Program has started!
+17/07/2023 13:27:20:INFO:Program has ended!
+17/07/2023 13:28:05:INFO:Program has started!
+17/07/2023 13:28:05:ERROR:name 'constants' is not defined
+17/07/2023 13:28:05:INFO:Program has ended!
+17/07/2023 13:28:32:INFO:Program has started!
+17/07/2023 13:28:32:INFO:Program has ended!
+17/07/2023 13:28:45:INFO:Program has started!
+17/07/2023 13:28:45:ERROR:name 'constants' is not defined
+17/07/2023 13:28:45:INFO:Program has ended!
+17/07/2023 13:29:51:INFO:Program has started!
+17/07/2023 13:30:25:INFO:Program has started!
+17/07/2023 13:30:44:INFO:Program has started!
+17/07/2023 13:30:44:ERROR:Attribute "daemon_time" has type str, but the real type should be int
+17/07/2023 13:30:44:INFO:Program has ended!
+17/07/2023 13:31:02:INFO:Program has started!
+17/07/2023 13:31:02:INFO:Program has ended!
