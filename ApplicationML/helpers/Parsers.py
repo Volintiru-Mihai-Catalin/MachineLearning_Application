@@ -1,4 +1,6 @@
+import json
 import argparse
+
 
 class ArgsParser:
 	def __init__(self):
@@ -13,3 +15,13 @@ class ArgsParser:
 		args = parser.parse_args()
 
 		return args
+
+class DataParser:
+	def __init__(self):
+		pass 
+
+	def parse_json(json_file):
+		with open(json_file) as file:
+			data = json.load(file)
+
+		return data
