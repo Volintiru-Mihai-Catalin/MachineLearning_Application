@@ -4,6 +4,7 @@ from constants.Constants import Constants
 from helpers.Logger import Logger
 from helpers.Parsers import ArgsParser, DataParser
 from helpers.Validator import Validator
+from helpers.CsvReader import CsvReader
 
 # import numpy as np
 # import pandas as pd
@@ -22,12 +23,16 @@ class MainApplication:
 		self.log = log
 		self.validator = validator
 		self.config_data = None
+		self.training_df = None
+		self.testing_df = None
 
 	def execute(self):
+		
 		try:
 			self.log.info("Program has started!")
 			self.validator.validate()
 			self.config_data = DataParser.parse_json(self.args.config)
+			self.training_df, self.testing_df = CsvReader.csv_separator(self.config_data['csv_file'])
 
 		except Exception as e:
 			self.log.error(e)

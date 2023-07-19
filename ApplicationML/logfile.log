@@ -38,3 +38,32 @@
 17/07/2023 16:07:51:INFO:Program has ended!
 17/07/2023 16:08:19:INFO:Program has started!
 17/07/2023 16:08:19:INFO:Program has ended!
+19/07/2023 18:05:38:INFO:Program has started!
+19/07/2023 18:05:38:ERROR:Invalid \escape: line 2 column 17 (char 18)
+19/07/2023 18:05:38:INFO:Program has ended!
+19/07/2023 18:06:22:INFO:Program has started!
+19/07/2023 18:07:02:INFO:Program has started!
+19/07/2023 18:07:44:INFO:Program has started!
+19/07/2023 18:08:01:INFO:Program has started!
+19/07/2023 18:08:01:INFO:Program has ended!
+19/07/2023 18:17:54:INFO:Program has started!
+19/07/2023 18:17:54:ERROR:'dict' object has no attribute 'csv_file'
+19/07/2023 18:17:54:INFO:Program has ended!
+19/07/2023 18:18:20:INFO:Program has started!
+19/07/2023 18:18:20:ERROR:'dict' object has no attribute 'csv_file'
+19/07/2023 18:18:20:INFO:Program has ended!
+19/07/2023 18:18:40:INFO:Program has started!
+19/07/2023 18:19:11:INFO:Program has started!
+19/07/2023 18:19:41:INFO:Program has started!
+19/07/2023 18:19:52:INFO:Program has started!
+19/07/2023 18:21:16:INFO:Program has started!
+19/07/2023 18:21:46:INFO:Program has started!
+19/07/2023 18:22:03:INFO:Program has started!
+19/07/2023 18:22:26:INFO:Program has started!
+19/07/2023 18:22:40:INFO:Program has started!
+19/07/2023 18:22:45:INFO:Program has started!
+19/07/2023 18:22:49:INFO:Program has started!
+19/07/2023 18:25:55:INFO:Program has started!
+19/07/2023 18:26:07:INFO:Program has started!
+19/07/2023 18:27:14:INFO:Program has started!
+19/07/2023 18:27:14:INFO:Program has ended!
