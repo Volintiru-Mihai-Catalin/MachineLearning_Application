@@ -5,15 +5,10 @@ from helpers.Logger import Logger
 from helpers.Parsers import ArgsParser, DataParser
 from helpers.Validator import Validator
 from helpers.CsvReader import CsvReader
+from machine_learning.MachineLearning import MachineLearning
 
-# import numpy as np
-# import pandas as pd
-# import matplotlib.pyplot as plt
-# from IPython.display import clear_output
-# from six.moves import urllib
-
-# import tensorflow.compat.v2.feature_column as fc 
-# import tensorflow as tf
+import time
+from datetime import datetime, timedelta
 
 
 class MainApplication:
@@ -25,6 +20,7 @@ class MainApplication:
 		self.config_data = None
 		self.training_df = None
 		self.testing_df = None
+		self.ml_instance = None
 
 	def execute(self):
 		
@@ -33,6 +29,14 @@ class MainApplication:
 			self.validator.validate()
 			self.config_data = DataParser.parse_json(self.args.config)
 			self.training_df, self.testing_df = CsvReader.csv_separator(self.config_data['csv_file'])
+			self.ml_instance = MachineLearning(self.training_df, self.testing_df, self.log)
+			self.ml_instance.train_model()
+	
+			# while(True):
+			# 	self.ml_instance.predict_value(datetime.utcnow())
+			# 	time.sleep(self.config_data['daemon_time'])
+
+			self.ml_instance.predict_value(datetime.utcnow() + timedelta(days=1))
 
 		except Exception as e:
 			self.log.error(e)
