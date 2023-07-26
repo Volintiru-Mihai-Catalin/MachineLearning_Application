@@ -24,19 +24,17 @@ class MainApplication:
 
 	def execute(self):
 		
+
 		try:
 			self.log.info("Program has started!")
 			self.validator.validate()
 			self.config_data = DataParser.parse_json(self.args.config)
-			self.training_df, self.testing_df = CsvReader.csv_separator(self.config_data['csv_file'])
-			self.ml_instance = MachineLearning(self.training_df, self.testing_df, self.log)
-			self.ml_instance.train_model()
-	
-			# while(True):
-			# 	self.ml_instance.predict_value(datetime.utcnow())
-			# 	time.sleep(self.config_data['daemon_time'])
+			self.ml_instance = MachineLearning(self.config_data['csv_file'], self.log)
+			
+			while(True):
+				self.ml_instance.train_model(datetime.utcnow() + timedelta(days=1))
+				time.sleep(self.config_data['daemon_time'])
 
-			self.ml_instance.predict_value(datetime.utcnow() + timedelta(days=1))
 
 		except Exception as e:
 			self.log.error(e)

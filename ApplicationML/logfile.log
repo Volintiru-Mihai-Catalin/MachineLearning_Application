@@ -1,316 +1,53 @@
-17/07/2023 13:24:58:INFO:Program has started!
-17/07/2023 13:26:06:INFO:Program has started!
-17/07/2023 13:26:06:ERROR:name 'check_path_exists' is not defined
-17/07/2023 13:26:06:INFO:Program has ended!
-17/07/2023 13:26:58:INFO:Program has started!
-17/07/2023 13:26:58:INFO:Program has ended!
-17/07/2023 13:27:08:INFO:Program has started!
-17/07/2023 13:27:08:ERROR:name 'check_path_exists' is not defined
-17/07/2023 13:27:08:INFO:Program has ended!
-17/07/2023 13:27:20:INFO:Program has started!
-17/07/2023 13:27:20:INFO:Program has ended!
-17/07/2023 13:28:05:INFO:Program has started!
-17/07/2023 13:28:05:ERROR:name 'constants' is not defined
-17/07/2023 13:28:05:INFO:Program has ended!
-17/07/2023 13:28:32:INFO:Program has started!
-17/07/2023 13:28:32:INFO:Program has ended!
-17/07/2023 13:28:45:INFO:Program has started!
-17/07/2023 13:28:45:ERROR:name 'constants' is not defined
-17/07/2023 13:28:45:INFO:Program has ended!
-17/07/2023 13:29:51:INFO:Program has started!
-17/07/2023 13:30:25:INFO:Program has started!
-17/07/2023 13:30:44:INFO:Program has started!
-17/07/2023 13:30:44:ERROR:Attribute "daemon_time" has type str, but the real type should be int
-17/07/2023 13:30:44:INFO:Program has ended!
-17/07/2023 13:31:02:INFO:Program has started!
-17/07/2023 13:31:02:INFO:Program has ended!
-17/07/2023 16:04:06:INFO:Program has started!
-17/07/2023 16:04:06:ERROR:'str' object has no attribute 'read'
-17/07/2023 16:04:06:INFO:Program has ended!
-17/07/2023 16:05:39:INFO:Program has started!
-17/07/2023 16:05:39:INFO:Program has ended!
-17/07/2023 16:07:29:INFO:Program has started!
-17/07/2023 16:07:29:INFO:Program has ended!
-17/07/2023 16:07:43:INFO:Program has started!
-17/07/2023 16:07:43:ERROR:name 'config_data' is not defined
-17/07/2023 16:07:43:INFO:Program has ended!
-17/07/2023 16:07:51:INFO:Program has started!
-17/07/2023 16:07:51:INFO:Program has ended!
-17/07/2023 16:08:19:INFO:Program has started!
-17/07/2023 16:08:19:INFO:Program has ended!
-19/07/2023 18:05:38:INFO:Program has started!
-19/07/2023 18:05:38:ERROR:Invalid \escape: line 2 column 17 (char 18)
-19/07/2023 18:05:38:INFO:Program has ended!
-19/07/2023 18:06:22:INFO:Program has started!
-19/07/2023 18:07:02:INFO:Program has started!
-19/07/2023 18:07:44:INFO:Program has started!
-19/07/2023 18:08:01:INFO:Program has started!
-19/07/2023 18:08:01:INFO:Program has ended!
-19/07/2023 18:17:54:INFO:Program has started!
-19/07/2023 18:17:54:ERROR:'dict' object has no attribute 'csv_file'
-19/07/2023 18:17:54:INFO:Program has ended!
-19/07/2023 18:18:20:INFO:Program has started!
-19/07/2023 18:18:20:ERROR:'dict' object has no attribute 'csv_file'
-19/07/2023 18:18:20:INFO:Program has ended!
-19/07/2023 18:18:40:INFO:Program has started!
-19/07/2023 18:19:11:INFO:Program has started!
-19/07/2023 18:19:41:INFO:Program has started!
-19/07/2023 18:19:52:INFO:Program has started!
-19/07/2023 18:21:16:INFO:Program has started!
-19/07/2023 18:21:46:INFO:Program has started!
-19/07/2023 18:22:03:INFO:Program has started!
-19/07/2023 18:22:26:INFO:Program has started!
-19/07/2023 18:22:40:INFO:Program has started!
-19/07/2023 18:22:45:INFO:Program has started!
-19/07/2023 18:22:49:INFO:Program has started!
-19/07/2023 18:25:55:INFO:Program has started!
-19/07/2023 18:26:07:INFO:Program has started!
-19/07/2023 18:27:14:INFO:Program has started!
-19/07/2023 18:27:14:INFO:Program has ended!
-21/07/2023 10:30:49:INFO:Program has started!
-21/07/2023 10:30:49:INFO:Training model...
-21/07/2023 10:30:49:INFO:Model is trained
-21/07/2023 10:30:49:WARNING:Can't predict a date from the past!
-21/07/2023 10:30:49:INFO:Program has ended!
-21/07/2023 10:31:12:INFO:Program has started!
-21/07/2023 10:31:12:INFO:Training model...
-21/07/2023 10:31:12:INFO:Model is trained
-21/07/2023 10:31:12:WARNING:Can't predict a date from the past!
-21/07/2023 10:31:12:INFO:Program has ended!
-21/07/2023 10:34:13:INFO:Program has started!
-21/07/2023 10:34:13:INFO:Training model...
-21/07/2023 10:34:13:INFO:Model is trained
-21/07/2023 10:34:13:WARNING:Can't predict a date from the past!
-21/07/2023 10:34:13:INFO:Program has ended!
-21/07/2023 10:34:55:INFO:Program has started!
-21/07/2023 10:34:55:INFO:Training model...
-21/07/2023 10:34:55:INFO:Model is trained
-21/07/2023 10:34:55:WARNING:Can't predict a date from the past!
-21/07/2023 10:34:55:INFO:Program has ended!
-21/07/2023 10:35:03:INFO:Program has started!
-21/07/2023 10:35:03:INFO:Training model...
-21/07/2023 10:35:03:INFO:Model is trained
-21/07/2023 10:35:03:ERROR:int() argument must be a string, a bytes-like object or a real number, not 'datetime.date'
-21/07/2023 10:35:03:INFO:Program has ended!
-21/07/2023 10:38:10:INFO:Program has started!
-21/07/2023 10:38:10:INFO:Training model...
-21/07/2023 10:38:10:INFO:Model is trained
-21/07/2023 10:38:10:ERROR:'tzinfo' is an invalid keyword argument for replace()
-21/07/2023 10:38:10:INFO:Program has ended!
-21/07/2023 10:43:58:INFO:Program has started!
-21/07/2023 10:43:58:INFO:Training model...
-21/07/2023 10:43:58:INFO:Model is trained
-21/07/2023 10:43:58:INFO:Program has ended!
-21/07/2023 10:44:19:INFO:Program has started!
-21/07/2023 10:44:19:INFO:Training model...
-21/07/2023 10:44:19:INFO:Model is trained
-21/07/2023 10:44:19:INFO:Program has ended!
-21/07/2023 10:45:59:INFO:Program has started!
-21/07/2023 10:45:59:INFO:Training model...
-21/07/2023 10:45:59:INFO:Model is trained
-21/07/2023 10:45:59:INFO:Program has ended!
-21/07/2023 10:47:08:INFO:Program has started!
-21/07/2023 10:47:08:INFO:Training model...
-21/07/2023 10:47:08:INFO:Model is trained
-21/07/2023 10:47:08:INFO:Program has ended!
-21/07/2023 10:51:08:INFO:Program has started!
-21/07/2023 10:51:08:ERROR:[Errno 13] Permission denied: 'training_file.csv'
-21/07/2023 10:51:08:INFO:Program has ended!
-21/07/2023 10:51:31:INFO:Program has started!
-21/07/2023 10:51:31:ERROR:[Errno 13] Permission denied: 'training_file.csv'
-21/07/2023 10:51:31:INFO:Program has ended!
-21/07/2023 10:52:28:INFO:Program has started!
-21/07/2023 10:52:28:INFO:Training model...
-21/07/2023 10:52:28:INFO:Model is trained
-21/07/2023 10:52:28:ERROR:can't compare datetime.datetime to datetime.date
-21/07/2023 10:52:28:INFO:Program has ended!
-21/07/2023 10:52:58:INFO:Program has started!
-21/07/2023 10:52:58:INFO:Training model...
-21/07/2023 10:52:58:INFO:Model is trained
-21/07/2023 10:52:58:ERROR:module 'datetime' has no attribute 'utcnow'
-21/07/2023 10:52:58:INFO:Program has ended!
-21/07/2023 10:53:23:INFO:Program has started!
-21/07/2023 10:53:23:INFO:Training model...
-21/07/2023 10:53:23:INFO:Model is trained
-21/07/2023 10:53:23:WARNING:Can't predict a date from the past!
-21/07/2023 10:53:23:INFO:Program has ended!
-21/07/2023 10:59:22:INFO:Program has started!
-21/07/2023 10:59:22:INFO:Training model...
-21/07/2023 10:59:22:INFO:Model is trained
-21/07/2023 10:59:22:WARNING:Can't predict a date from the past!
-21/07/2023 10:59:22:ERROR:name 'time' is not defined
-21/07/2023 10:59:22:INFO:Program has ended!
-21/07/2023 11:00:00:INFO:Program has started!
-21/07/2023 11:00:00:INFO:Training model...
-21/07/2023 11:00:00:INFO:Model is trained
-21/07/2023 11:00:00:WARNING:Can't predict a date from the past!
-21/07/2023 11:00:10:WARNING:Can't predict a date from the past!
-21/07/2023 11:00:13:INFO:Program has ended!
-21/07/2023 11:33:14:INFO:Program has started!
-21/07/2023 11:33:14:ERROR:[Errno 13] Permission denied: 'training_file.csv'
-21/07/2023 11:33:14:INFO:Program has ended!
-21/07/2023 11:33:35:INFO:Program has started!
-21/07/2023 11:33:35:INFO:Training model...
-21/07/2023 11:33:38:ERROR:Graph execution error:
-
-Detected at node 'sequential/Cast' defined at (most recent call last):
-    File "C:\Users\Voli\Desktop\proiect_practica\ApplicationML\MainApplication.py", line 61, in <module>
-      app.execute()
-    File "C:\Users\Voli\Desktop\proiect_practica\ApplicationML\MainApplication.py", line 41, in execute
-      self.ml_instance.train_model()
-    File "C:\Users\Voli\Desktop\proiect_practica\ApplicationML\machine_learning\MachineLearning.py", line 30, in train_model
-      model.fit(timestamps, flow_normalized, epochs=100, batch_size=32, verbose=1)
-    File "C:\Python310\lib\site-packages\keras\src\utils\traceback_utils.py", line 65, in error_handler
-      return fn(*args, **kwargs)
-    File "C:\Python310\lib\site-packages\keras\src\engine\training.py", line 1742, in fit
-      tmp_logs = self.train_function(iterator)
-    File "C:\Python310\lib\site-packages\keras\src\engine\training.py", line 1338, in train_function
-      return step_function(self, iterator)
-    File "C:\Python310\lib\site-packages\keras\src\engine\training.py", line 1322, in step_function
-      outputs = model.distribute_strategy.run(run_step, args=(data,))
-    File "C:\Python310\lib\site-packages\keras\src\engine\training.py", line 1303, in run_step
-      outputs = model.train_step(data)
-    File "C:\Python310\lib\site-packages\keras\src\engine\training.py", line 1080, in train_step
-      y_pred = self(x, training=True)
-    File "C:\Python310\lib\site-packages\keras\src\utils\traceback_utils.py", line 65, in error_handler
-      return fn(*args, **kwargs)
-    File "C:\Python310\lib\site-packages\keras\src\engine\training.py", line 569, in __call__
-      return super().__call__(*args, **kwargs)
-    File "C:\Python310\lib\site-packages\keras\src\utils\traceback_utils.py", line 65, in error_handler
-      return fn(*args, **kwargs)
-    File "C:\Python310\lib\site-packages\keras\src\engine\base_layer.py", line 1150, in __call__
-      outputs = call_fn(inputs, *args, **kwargs)
-    File "C:\Python310\lib\site-packages\keras\src\utils\traceback_utils.py", line 96, in error_handler
-      return fn(*args, **kwargs)
-    File "C:\Python310\lib\site-packages\keras\src\engine\sequential.py", line 405, in call
-      return super().call(inputs, training=training, mask=mask)
-    File "C:\Python310\lib\site-packages\keras\src\engine\functional.py", line 512, in call
-      return self._run_internal_graph(inputs, training=training, mask=mask)
-    File "C:\Python310\lib\site-packages\keras\src\engine\functional.py", line 651, in _run_internal_graph
-      y = self._conform_to_reference_input(y, ref_input=x)
-    File "C:\Python310\lib\site-packages\keras\src\engine\functional.py", line 748, in _conform_to_reference_input
-      tensor = tf.cast(tensor, dtype=ref_input.dtype)
-Node: 'sequential/Cast'
-Cast string to float is not supported
-	 [[{{node sequential/Cast}}]] [Op:__inference_train_function_966]
-21/07/2023 11:33:38:INFO:Program has ended!
-21/07/2023 11:34:22:INFO:Program has started!
-21/07/2023 11:34:22:INFO:Training model...
-21/07/2023 11:34:24:ERROR:Graph execution error:
-
-Detected at node 'sequential/Cast' defined at (most recent call last):
-    File "C:\Users\Voli\Desktop\proiect_practica\ApplicationML\MainApplication.py", line 61, in <module>
-      app.execute()
-    File "C:\Users\Voli\Desktop\proiect_practica\ApplicationML\MainApplication.py", line 41, in execute
-      self.ml_instance.train_model()
-    File "C:\Users\Voli\Desktop\proiect_practica\ApplicationML\machine_learning\MachineLearning.py", line 30, in train_model
-      model.fit(timestamps, flow_normalized, epochs=100, batch_size=32, verbose=1)
-    File "C:\Python310\lib\site-packages\keras\src\utils\traceback_utils.py", line 65, in error_handler
-      return fn(*args, **kwargs)
-    File "C:\Python310\lib\site-packages\keras\src\engine\training.py", line 1742, in fit
-      tmp_logs = self.train_function(iterator)
-    File "C:\Python310\lib\site-packages\keras\src\engine\training.py", line 1338, in train_function
-      return step_function(self, iterator)
-    File "C:\Python310\lib\site-packages\keras\src\engine\training.py", line 1322, in step_function
-      outputs = model.distribute_strategy.run(run_step, args=(data,))
-    File "C:\Python310\lib\site-packages\keras\src\engine\training.py", line 1303, in run_step
-      outputs = model.train_step(data)
-    File "C:\Python310\lib\site-packages\keras\src\engine\training.py", line 1080, in train_step
-      y_pred = self(x, training=True)
-    File "C:\Python310\lib\site-packages\keras\src\utils\traceback_utils.py", line 65, in error_handler
-      return fn(*args, **kwargs)
-    File "C:\Python310\lib\site-packages\keras\src\engine\training.py", line 569, in __call__
-      return super().__call__(*args, **kwargs)
-    File "C:\Python310\lib\site-packages\keras\src\utils\traceback_utils.py", line 65, in error_handler
-      return fn(*args, **kwargs)
-    File "C:\Python310\lib\site-packages\keras\src\engine\base_layer.py", line 1150, in __call__
-      outputs = call_fn(inputs, *args, **kwargs)
-    File "C:\Python310\lib\site-packages\keras\src\utils\traceback_utils.py", line 96, in error_handler
-      return fn(*args, **kwargs)
-    File "C:\Python310\lib\site-packages\keras\src\engine\sequential.py", line 405, in call
-      return super().call(inputs, training=training, mask=mask)
-    File "C:\Python310\lib\site-packages\keras\src\engine\functional.py", line 512, in call
-      return self._run_internal_graph(inputs, training=training, mask=mask)
-    File "C:\Python310\lib\site-packages\keras\src\engine\functional.py", line 651, in _run_internal_graph
-      y = self._conform_to_reference_input(y, ref_input=x)
-    File "C:\Python310\lib\site-packages\keras\src\engine\functional.py", line 748, in _conform_to_reference_input
-      tensor = tf.cast(tensor, dtype=ref_input.dtype)
-Node: 'sequential/Cast'
-Cast string to float is not supported
-	 [[{{node sequential/Cast}}]] [Op:__inference_train_function_966]
-21/07/2023 11:34:24:INFO:Program has ended!
-21/07/2023 11:39:33:INFO:Program has started!
-21/07/2023 11:39:33:INFO:Training model...
-21/07/2023 11:39:33:ERROR:'numpy.ndarray' object has no attribute 'apply'
-21/07/2023 11:39:33:INFO:Program has ended!
-21/07/2023 11:41:05:INFO:Program has started!
-21/07/2023 11:41:05:INFO:Training model...
-21/07/2023 11:41:05:INFO:Model is trained
-21/07/2023 11:41:05:INFO:Program has ended!
-21/07/2023 11:41:33:INFO:Program has started!
-21/07/2023 11:41:33:INFO:Training model...
-21/07/2023 11:41:33:INFO:Model is trained
-21/07/2023 11:41:33:INFO:Program has ended!
-21/07/2023 11:44:15:INFO:Program has started!
-21/07/2023 11:44:15:INFO:Training model...
-21/07/2023 11:44:15:ERROR:name 'utc_to_unix' is not defined
-21/07/2023 11:44:15:INFO:Program has ended!
-21/07/2023 11:44:30:INFO:Program has started!
-21/07/2023 11:44:30:INFO:Training model...
-21/07/2023 11:44:30:ERROR:time data '14.06.2023 13:47:22' does not match format '%Y-%m-%d %H:%M:%S'
-21/07/2023 11:44:30:INFO:Program has ended!
-21/07/2023 11:44:52:INFO:Program has started!
-21/07/2023 11:44:52:INFO:Training model...
-21/07/2023 11:44:52:ERROR:time data '14.06.2023 13:47:22' does not match format '%Y.%m.%d %H:%M:%S'
-21/07/2023 11:44:52:INFO:Program has ended!
-21/07/2023 11:45:33:INFO:Program has started!
-21/07/2023 11:45:33:INFO:Training model...
-21/07/2023 11:45:33:INFO:Model is trained
-21/07/2023 11:45:33:INFO:Program has ended!
-21/07/2023 11:46:20:INFO:Program has started!
-21/07/2023 11:46:21:INFO:Training model...
-21/07/2023 11:46:21:INFO:Model is trained
-21/07/2023 11:46:21:INFO:Program has ended!
-21/07/2023 11:46:50:INFO:Program has started!
-21/07/2023 11:46:50:INFO:Training model...
-21/07/2023 11:46:50:INFO:Model is trained
-21/07/2023 11:46:50:INFO:Program has ended!
-21/07/2023 11:47:11:INFO:Program has started!
-21/07/2023 11:47:11:INFO:Training model...
-21/07/2023 11:47:11:INFO:Model is trained
-21/07/2023 11:47:11:INFO:Program has ended!
-21/07/2023 11:48:05:INFO:Program has started!
-21/07/2023 11:48:05:INFO:Training model...
-21/07/2023 11:48:05:INFO:Model is trained
-21/07/2023 11:48:05:INFO:Program has ended!
-21/07/2023 11:48:31:INFO:Program has started!
-21/07/2023 11:48:31:INFO:Training model...
-21/07/2023 11:48:36:ERROR:name 'timestamps_test' is not defined
-21/07/2023 11:48:36:INFO:Program has ended!
-21/07/2023 11:53:48:INFO:Program has started!
-21/07/2023 11:53:48:INFO:Training model...
-21/07/2023 11:53:52:INFO:Model is trained
-21/07/2023 11:53:52:INFO:Program has ended!
-21/07/2023 12:02:32:INFO:Program has started!
-21/07/2023 12:02:32:INFO:Training model...
-21/07/2023 12:02:37:INFO:Model is trained
-21/07/2023 12:02:37:ERROR:name 'timedelta' is not defined
-21/07/2023 12:02:37:INFO:Program has ended!
-21/07/2023 12:03:03:INFO:Program has started!
-21/07/2023 12:03:03:INFO:Training model...
-21/07/2023 12:03:08:INFO:Model is trained
-21/07/2023 12:03:08:ERROR:name 'model' is not defined
-21/07/2023 12:03:08:INFO:Program has ended!
-21/07/2023 12:04:40:INFO:Program has started!
-21/07/2023 12:04:40:INFO:Training model...
-21/07/2023 12:04:45:INFO:Model is trained
-21/07/2023 12:04:45:ERROR:name 'std_debit' is not defined
-21/07/2023 12:04:45:INFO:Program has ended!
-21/07/2023 16:10:21:INFO:Program has started!
-21/07/2023 16:10:21:INFO:Training model...
-21/07/2023 16:10:26:INFO:Model is trained
-21/07/2023 16:10:26:INFO:Program has ended!
-21/07/2023 16:12:13:INFO:Program has started!
-21/07/2023 16:12:13:INFO:Training model...
-21/07/2023 16:12:18:INFO:Model is trained
-21/07/2023 16:12:18:INFO:Program has ended!
+24/07/2023 13:09:19:INFO:Program has started!
+24/07/2023 13:09:19:INFO:Training model...
+24/07/2023 13:09:19:ERROR:name 'pd' is not defined
+24/07/2023 13:09:19:INFO:Program has ended!
+24/07/2023 13:12:28:INFO:Program has started!
+24/07/2023 13:12:28:INFO:Training model...
+24/07/2023 13:12:28:ERROR:ufunc 'divide' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''
+24/07/2023 13:12:28:INFO:Program has ended!
+24/07/2023 13:13:35:INFO:Program has started!
+24/07/2023 13:13:35:INFO:Training model...
+24/07/2023 13:25:51:INFO:Program has started!
+24/07/2023 13:25:51:INFO:Training model...
+24/07/2023 13:29:11:INFO:Program has started!
+24/07/2023 13:29:11:INFO:Training model...
+24/07/2023 13:29:28:INFO:Program has started!
+24/07/2023 13:29:28:INFO:Training model...
+24/07/2023 13:30:08:INFO:Program has started!
+24/07/2023 13:30:08:INFO:Training model...
+24/07/2023 13:30:31:INFO:Program has started!
+24/07/2023 13:30:31:INFO:Training model...
+24/07/2023 13:36:03:INFO:Program has started!
+24/07/2023 13:36:03:INFO:Training model...
+24/07/2023 13:36:37:INFO:Program has started!
+24/07/2023 13:36:37:INFO:Training model...
+24/07/2023 13:37:55:INFO:Program has started!
+24/07/2023 13:37:55:INFO:Training model...
+24/07/2023 13:39:02:INFO:Program has started!
+24/07/2023 13:39:02:INFO:Training model...
+24/07/2023 13:40:07:INFO:Program has started!
+24/07/2023 13:40:07:INFO:Training model...
+24/07/2023 13:40:23:INFO:Model is trained
+24/07/2023 13:40:23:INFO:Program has started!
+24/07/2023 13:40:23:INFO:Program has ended!
+24/07/2023 13:40:46:INFO:Program has started!
+24/07/2023 13:40:46:INFO:Training model...
+24/07/2023 13:43:23:INFO:Model is trained
+24/07/2023 13:43:23:INFO:Program has started!
+24/07/2023 13:43:23:INFO:Program has ended!
+24/07/2023 13:43:42:INFO:Program has started!
+24/07/2023 13:43:42:INFO:Training model...
+24/07/2023 13:46:45:INFO:Model is trained
+24/07/2023 13:46:45:INFO:Program has started!
+24/07/2023 13:46:45:INFO:Program has ended!
+26/07/2023 15:28:19:INFO:Program has started!
+26/07/2023 15:28:19:INFO:Training model...
+26/07/2023 15:28:20:INFO:Model is trained
+26/07/2023 15:31:11:INFO:Program has ended!
+26/07/2023 15:33:19:INFO:Program has started!
+26/07/2023 15:33:19:INFO:Training model...
+26/07/2023 15:33:19:INFO:Model is trained
+26/07/2023 15:36:29:INFO:Training model...
+26/07/2023 15:36:29:INFO:Model is trained
+26/07/2023 15:36:40:INFO:Program has ended!

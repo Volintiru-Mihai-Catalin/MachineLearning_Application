@@ -1,14 +1,14 @@
 import numpy as np
+import pandas as pd
+import tensorflow as tf
+from sklearn.model_selection import train_test_split
 from datetime import datetime
-from tensorflow import keras
-from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import Dense
+
 
 class MachineLearning:
 	
-	def __init__(self, training_df, testing_df, log):
-		self.training_df = training_df
-		self.testing_df = testing_df
+	def __init__(self, csv_file, log):
+		self.csv_file = csv_file
 		self.log = log
 		self.model = None
 		self.a = None 
@@ -18,49 +18,71 @@ class MachineLearning:
 		utc_datetime = datetime.strptime(utc_timestamp, "%d.%m.%Y %H:%M:%S")
 		return int(utc_datetime.timestamp())
 
-	def train_model(self):
+	def train_model(self, data_stamp):
 		self.log.info("Training model...")
 
-		timestamps = np.vectorize(self.utc_to_unix)(self.training_df['ts'].values)
-		flow = self.training_df['Flow']
+		data = pd.read_csv(self.csv_file)
 
-		print(flow)
+		data['ts'] = data['ts'].apply(lambda x: self.utc_to_unix(x))
 
-		mean_flow = np.mean(flow)
-		std_flow = np.std(flow)
-		flow_normalized = (flow - mean_flow) / std_flow
+		# Sort the data by timestamp (if not already sorted)
+		data = data.sort_values(by='ts')
 
-		self.model = Sequential()
-		self.model.add(Dense(64, activation='relu', input_shape=(1,)))
-		self.model.add(Dense(32, activation='relu'))
-		self.model.add(Dense(1))
-		self.model.compile(optimizer='adam', loss='mse')
+		# Normalize the 'debit' data
+		mean_debit = data['Flow'].mean()
+		std_debit = data['Flow'].std()
+		data['normalized_Flow'] = (data['Flow'] - mean_debit) / std_debit
 
-		self.model.fit(timestamps, flow_normalized, epochs=100, batch_size=32, verbose=1)
+		# Create sequences and targets for the LSTM model
+		sequence_length = 30  # Adjust this based on the number of past timestamps you want to consider
+		sequences = []
+		targets = []
+		for i in range(len(data) - sequence_length):
+		    sequence = data['normalized_Flow'].values[i:i + sequence_length]
+		    target = data['normalized_Flow'].values[i + sequence_length]
+		    sequences.append(sequence)
+		    targets.append(target)
 
-		testing_timestamps = np.vectorize(self.utc_to_unix)(self.testing_df['ts'].values)
-		testing_flow = self.testing_df['Flow']
+		sequences = np.array(sequences)
+		targets = np.array(targets)
 
-		testing_mean_flow = np.mean(testing_flow)
-		testing_std_flow = np.std(testing_flow)
-		testing_flow_normalized = (testing_flow - testing_mean_flow) / testing_std_flow
+		# Split the data into training and testing sets
+		x_train, x_test, y_train, y_test = train_test_split(sequences, targets, test_size=0.2)
 
-		loss = self.model.evaluate(testing_timestamps, testing_flow_normalized)
-		print(f'Test Loss: {loss:.4f}')
+		# Create the LSTM model using TensorFlow's Keras API
+		model = tf.keras.Sequential([
+		    tf.keras.layers.LSTM(64, input_shape=(sequence_length, 1), activation='tanh', recurrent_activation='sigmoid'),
+		    tf.keras.layers.Dense(32, activation='relu'),
+		    tf.keras.layers.Dense(16, activation='tanh'),
+		    tf.keras.layers.Dense(8, activation='sigmoid'),
+		    tf.keras.layers.Dense(1)
+		])
 
-		self.a = std_flow
-		self.b = mean_flow
+		# Compile the model
+		optimizer = tf.keras.optimizers.Adam(learning_rate=0.001)
+		model.compile(optimizer=optimizer, loss='mean_squared_error')
 
 		self.log.info("Model is trained")
 
-	def predict_value(self, data_stamp):
-		if data_stamp <= datetime.utcnow():
-			self.log.warning("Can't predict a date from the past!")
-			return
+		# Train the model
+		epochs = 500
+		batch_size = 8
+		model.fit(x_train, y_train, epochs=epochs, batch_size=batch_size, validation_split=0.1)
 
-		new_timestamp = int(data_stamp.timestamp())
-		normalized_debit_prediction = self.model.predict(np.array([new_timestamp]))[0][0]
-		predicted_debit = normalized_debit_prediction * self.a + self.b 
-		print(f'Predicted Debit at Timestamp {new_timestamp}: {predicted_debit:.2f}')
+		# Evaluate the model on the test set
+		mse = model.evaluate(x_test, y_test)
+		print(f"Test Mean Squared Error: {mse}")
+
+		# Make predictions for a given Unix timestamp
+		# Replace unix_timestamp_to_predict with your target Unix timestamp (in seconds)
+		unix_timestamp_to_predict = int(data_stamp.timestamp())
+		input_sequence = data[data['ts'] < unix_timestamp_to_predict].tail(sequence_length)
+		input_sequence = input_sequence['normalized_Flow'].values.reshape(1, -1, 1)
+
+		predicted_normalized_debit = model.predict(input_sequence)[0][0]
+		predicted_debit = predicted_normalized_debit * std_debit + mean_debit
+
+		print(f"Predicted Debit at {unix_timestamp_to_predict}: {predicted_debit}")
+		
 
 		return
