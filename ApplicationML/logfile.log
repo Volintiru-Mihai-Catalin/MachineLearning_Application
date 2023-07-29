@@ -51,3 +51,103 @@
 26/07/2023 15:36:29:INFO:Training model...
 26/07/2023 15:36:29:INFO:Model is trained
 26/07/2023 15:36:40:INFO:Program has ended!
+27/07/2023 11:47:07:INFO:Program has started!
+27/07/2023 11:47:07:INFO:Training model...
+27/07/2023 11:47:08:INFO:Model is trained
+27/07/2023 11:47:11:INFO:Program has ended!
+27/07/2023 11:55:41:INFO:Program has started!
+27/07/2023 11:55:41:INFO:Training model...
+27/07/2023 11:55:42:INFO:Model is trained
+27/07/2023 11:59:11:INFO:Training model...
+27/07/2023 11:59:12:INFO:Model is trained
+27/07/2023 12:00:31:INFO:Program has ended!
+27/07/2023 12:15:57:INFO:Program has started!
+27/07/2023 12:15:57:INFO:Training model...
+27/07/2023 12:15:57:INFO:Model is trained
+27/07/2023 12:15:57:ERROR:in user code:
+
+    File "C:\Python310\lib\site-packages\keras\src\engine\training.py", line 1338, in train_function  *
+        return step_function(self, iterator)
+    File "C:\Python310\lib\site-packages\keras\src\engine\training.py", line 1322, in step_function  **
+        outputs = model.distribute_strategy.run(run_step, args=(data,))
+    File "C:\Python310\lib\site-packages\keras\src\engine\training.py", line 1303, in run_step  **
+        outputs = model.train_step(data)
+    File "C:\Python310\lib\site-packages\keras\src\engine\training.py", line 1080, in train_step
+        y_pred = self(x, training=True)
+    File "C:\Python310\lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+        raise e.with_traceback(filtered_tb) from None
+    File "C:\Python310\lib\site-packages\keras\src\engine\input_spec.py", line 235, in assert_input_compatibility
+        raise ValueError(
+
+    ValueError: Exception encountered when calling layer 'sequential' (type Sequential).
+    
+    Input 0 of layer "lstm" is incompatible with the layer: expected ndim=3, found ndim=2. Full shape received: (None, 30)
+    
+    Call arguments received by layer 'sequential' (type Sequential):
+      • inputs=tf.Tensor(shape=(None, 30), dtype=float32)
+      • training=True
+      • mask=None
+
+27/07/2023 12:15:57:INFO:Program has ended!
+27/07/2023 12:26:57:INFO:Program has started!
+27/07/2023 12:26:57:INFO:Training model...
+27/07/2023 12:27:01:INFO:Program has ended!
+27/07/2023 12:27:16:INFO:Program has started!
+27/07/2023 12:27:16:INFO:Training model...
+27/07/2023 12:27:31:INFO:Model is trained
+27/07/2023 12:27:31:ERROR:MachineLearning.model_predict() takes 1 positional argument but 2 were given
+27/07/2023 12:27:31:INFO:Program has ended!
+27/07/2023 12:28:03:INFO:Program has started!
+27/07/2023 12:28:03:INFO:Training model...
+27/07/2023 12:28:19:INFO:Model is trained
+27/07/2023 12:28:19:ERROR:name 'model' is not defined
+27/07/2023 12:28:19:INFO:Program has ended!
+27/07/2023 12:29:17:INFO:Program has started!
+27/07/2023 12:29:17:INFO:Training model...
+27/07/2023 12:29:33:INFO:Model is trained
+27/07/2023 12:29:56:INFO:Program has ended!
+27/07/2023 12:31:01:INFO:Program has started!
+27/07/2023 12:31:01:INFO:Training model...
+27/07/2023 12:31:17:INFO:Model is trained
+27/07/2023 12:32:06:INFO:Program has ended!
+2023/07/27 12:41:33:INFO:Program has started!
+2023/07/27 12:41:33:INFO:Training model...
+2023/07/27 12:41:49:INFO:Model is trained
+2023/07/27 12:42:09:INFO:Program has ended!
+2023/07/27 12:43:20:INFO:Program has started!
+2023/07/27 12:43:20:INFO:Training model...
+2023/07/27 12:43:36:INFO:Model is trained
+2023/07/27 12:43:36:INFO:Predicted Debit at 2023-07-28 09:43:36.173110: 39.30115985873292
+2023/07/27 12:43:46:INFO:Predicted Debit at 2023-07-28 09:43:46.528817: 39.30115985873292
+2023/07/27 12:43:51:INFO:Program has ended!
+2023/07/27 12:45:03:INFO:Program has started!
+2023/07/27 12:45:03:INFO:Training model...
+2023/07/27 12:45:20:INFO:Model is trained
+2023/07/27 12:45:20:ERROR:cannot switch from manual field specification to automatic field numbering
+2023/07/27 12:45:20:INFO:Program has ended!
+2023/07/27 12:45:40:INFO:Program has started!
+2023/07/27 12:45:40:INFO:Training model...
+2023/07/27 12:45:57:INFO:Model is trained
+2023/07/27 12:45:58:INFO:Predicted Debit at 2023-07-28 09:45:57.950900: 39.11
+2023/07/27 12:46:08:INFO:Predicted Debit at 2023-07-28 09:46:08.321871: 39.11
+2023/07/27 12:46:18:INFO:Predicted Debit at 2023-07-28 09:46:18.383847: 39.11
+2023/07/27 12:46:22:INFO:Program has ended!
+2023/07/27 12:48:10:INFO:Program has started!
+2023/07/27 12:48:10:INFO:Training model...
+2023/07/27 12:51:24:INFO:Model is trained
+2023/07/27 12:51:24:INFO:Test Mean Squared Error: 0.9624610543251038
+2023/07/27 12:51:25:INFO:Predicted Debit at 2023-07-28 09:51:24.817010: 32.72
+2023/07/27 12:51:35:INFO:Predicted Debit at 2023-07-28 09:51:35.173396: 32.72
+2023/07/27 12:51:45:INFO:Predicted Debit at 2023-07-28 09:51:45.233791: 32.72
+2023/07/27 12:51:55:INFO:Predicted Debit at 2023-07-28 09:51:55.283668: 32.72
+2023/07/27 12:52:00:INFO:Program has ended!
+2023/07/27 13:02:33:INFO:Program has started!
+2023/07/27 13:02:33:INFO:Training model...
+2023/07/27 13:05:46:INFO:Model is trained
+2023/07/27 13:05:46:INFO:Test Mean Squared Error: 0.827523410320282
+2023/07/27 13:05:47:INFO:Predicted Debit at 2023-07-28 10:05:46.799808: 32.34
+2023/07/27 13:05:57:INFO:Predicted Debit at 2023-07-28 10:05:57.164922: 32.34
+2023/07/27 13:06:07:INFO:Predicted Debit at 2023-07-28 10:06:07.211831: 32.34
+2023/07/27 13:06:17:INFO:Predicted Debit at 2023-07-28 10:06:17.262654: 32.34
+2023/07/27 13:06:27:INFO:Predicted Debit at 2023-07-28 10:06:27.314810: 32.34
+2023/07/27 13:06:37:INFO:Predicted Debit at 2023-07-28 10:06:37.366549: 32.34
