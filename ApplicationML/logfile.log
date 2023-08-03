@@ -151,3 +151,334 @@
 2023/07/27 13:06:17:INFO:Predicted Debit at 2023-07-28 10:06:17.262654: 32.34
 2023/07/27 13:06:27:INFO:Predicted Debit at 2023-07-28 10:06:27.314810: 32.34
 2023/07/27 13:06:37:INFO:Predicted Debit at 2023-07-28 10:06:37.366549: 32.34
+2023/08/01 12:51:34:INFO:Program has started!
+2023/08/01 12:51:34:INFO:Training model...
+2023/08/01 12:51:34:ERROR:'NoneType' object has no attribute 'write'
+2023/08/01 12:51:34:INFO:Program has ended!
+2023/08/01 12:51:44:INFO:Program has started!
+2023/08/01 12:51:44:INFO:Training model...
+2023/08/01 12:51:44:ERROR:'NoneType' object has no attribute 'write'
+2023/08/01 12:51:44:INFO:Program has ended!
+2023/08/01 12:53:05:INFO:Program has started!
+2023/08/01 12:53:05:INFO:Training model...
+2023/08/01 12:53:12:INFO:Program has ended!
+2023/08/02 11:36:33:INFO:Program has started!
+2023/08/02 11:36:33:INFO:Training model...
+2023/08/02 11:36:59:INFO:Program has ended!
+2023/08/02 11:37:17:INFO:Program has started!
+2023/08/02 11:37:17:INFO:Training model...
+2023/08/02 11:37:33:INFO:Model is trained
+2023/08/02 11:37:33:INFO:Test Mean Squared Error: 0.7909014225006104
+2023/08/02 11:37:33:INFO:Predicted Debit at 2023-08-03 08:37:33.628441: 36.18
+2023/08/02 11:37:33:ERROR:name 'model' is not defined
+2023/08/02 11:37:33:INFO:Program has ended!
+2023/08/02 11:38:28:INFO:Program has started!
+2023/08/02 11:38:28:INFO:Training model...
+2023/08/02 11:38:44:INFO:Model is trained
+2023/08/02 11:38:44:INFO:Test Mean Squared Error: 0.7905401587486267
+2023/08/02 11:38:44:INFO:Predicted Debit at 2023-08-03 08:38:44.328372: 47.85
+2023/08/02 11:38:47:INFO:Assets written to: C:\Users\Voli\Desktop\proiect_practica\ApplicationML\ceva\assets
+2023/08/02 11:38:47:INFO:Program has ended!
+2023/08/02 11:41:39:INFO:Program has started!
+2023/08/02 11:41:39:INFO:Training model...
+2023/08/02 11:41:56:INFO:Model is trained
+2023/08/02 11:41:56:INFO:Test Mean Squared Error: 1.0077840089797974
+2023/08/02 11:41:56:INFO:Predicted Debit at 2023-08-03 08:41:56.189507: 24.21
+2023/08/02 11:41:58:INFO:Assets written to: C:\Users\Voli\Desktop\proiect_practica\ApplicationML\MachineLearningModel\assets
+2023/08/02 11:41:58:INFO:Program has ended!
+2023/08/02 12:00:38:INFO:Program has started!
+2023/08/02 12:00:38:INFO:Training model...
+2023/08/02 12:00:54:INFO:Model is trained
+2023/08/02 12:00:54:INFO:Test Mean Squared Error: 0.8739388585090637
+2023/08/02 12:00:55:INFO:Predicted Debit at 2023-08-03 09:00:54.986301: 36.59
+2023/08/02 12:00:57:INFO:Assets written to: C:\Users\Voli\Desktop\proiect_practica\ApplicationML\MachineLearningModel\assets
+2023/08/02 12:00:58:ERROR:name 'tf2onnx' is not defined
+2023/08/02 12:00:58:INFO:Program has ended!
+2023/08/02 12:02:38:INFO:Program has started!
+2023/08/02 12:02:38:INFO:Training model...
+2023/08/02 12:02:54:INFO:Model is trained
+2023/08/02 12:02:54:INFO:Test Mean Squared Error: 0.878903329372406
+2023/08/02 12:02:54:INFO:Predicted Debit at 2023-08-03 09:02:54.545292: 45.58
+2023/08/02 12:02:57:INFO:Assets written to: C:\Users\Voli\Desktop\proiect_practica\ApplicationML\MachineLearningModel\assets
+2023/08/02 12:02:57:ERROR:name 'model' is not defined
+2023/08/02 12:02:57:INFO:Program has ended!
+2023/08/02 12:03:17:INFO:Program has started!
+2023/08/02 12:03:17:INFO:Training model...
+2023/08/02 12:03:33:INFO:Model is trained
+2023/08/02 12:03:34:INFO:Test Mean Squared Error: 0.7295063734054565
+2023/08/02 12:03:34:INFO:Predicted Debit at 2023-08-03 09:03:34.016097: 41.31
+2023/08/02 12:03:36:INFO:Assets written to: C:\Users\Voli\Desktop\proiect_practica\ApplicationML\MachineLearningModel\assets
+2023/08/02 12:03:37:ERROR:in user code:
+
+    File "C:\Python310\lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler  **
+        raise e.with_traceback(filtered_tb) from None
+    File "C:\Python310\lib\site-packages\keras\src\engine\input_spec.py", line 298, in assert_input_compatibility
+        raise ValueError(
+
+    ValueError: Input 0 of layer "sequential" is incompatible with the layer: expected shape=(None, 30, 1), found shape=(None, 224, 224, 3)
+
+2023/08/02 12:03:37:INFO:Program has ended!
+2023/08/02 12:04:17:INFO:Program has started!
+2023/08/02 12:04:17:INFO:Training model...
+2023/08/02 12:04:37:INFO:Model is trained
+2023/08/02 12:04:37:INFO:Test Mean Squared Error: 0.9404155015945435
+2023/08/02 12:04:38:INFO:Predicted Debit at 2023-08-03 09:04:37.582033: 50.27
+2023/08/02 12:04:41:INFO:Assets written to: C:\Users\Voli\Desktop\proiect_practica\ApplicationML\MachineLearningModel\assets
+2023/08/02 12:04:41:ERROR:'FuncGraph' object has no attribute '_captures'
+2023/08/02 12:04:41:INFO:Program has ended!
+2023/08/02 12:10:45:INFO:Program has started!
+2023/08/02 12:10:45:INFO:Training model...
+2023/08/02 12:11:01:INFO:Model is trained
+2023/08/02 12:11:02:INFO:Test Mean Squared Error: 0.8618993759155273
+2023/08/02 12:11:02:INFO:Predicted Debit at 2023-08-03 09:11:02.048904: 27.35
+2023/08/02 12:11:04:WARNING:Found untraced functions such as _update_step_xla, lstm_cell_layer_call_fn, lstm_cell_layer_call_and_return_conditional_losses while saving (showing 3 of 3). These functions will not be directly callable after loading.
+2023/08/02 12:11:05:INFO:Assets written to: C:\Users\Voli\Desktop\proiect_practica\ApplicationML\MachineLearningModel\assets
+2023/08/02 12:11:06:INFO:Using tensorflow=2.12.1, onnx=1.14.0, tf2onnx=1.14.0/8f8d49
+2023/08/02 12:11:06:INFO:Using opset <onnx, 13>
+2023/08/02 12:11:06:INFO:Computed 0 values for constant folding
+2023/08/02 12:11:06:INFO:Computed 0 values for constant folding
+2023/08/02 12:11:06:INFO:Computed 1 values for constant folding
+2023/08/02 12:11:06:INFO:folding node using tf type=StridedSlice, name=sequential/lstm/PartitionedCall/strided_slice
+2023/08/02 12:11:06:INFO:Optimizing ONNX model
+2023/08/02 12:11:06:INFO:After optimization: Cast -1 (3->2), Concat -1 (2->1), Const -20 (37->17), Expand -1 (2->1), Identity -2 (2->0), Squeeze -1 (3->2), Unsqueeze -5 (6->1)
+2023/08/02 12:11:06:INFO:Program has ended!
+2023/08/03 11:32:57:INFO:Program has started!
+2023/08/03 11:32:57:INFO:Training model...
+2023/08/03 11:33:14:INFO:Model is trained
+2023/08/03 11:33:14:INFO:Test Mean Squared Error: 0.8404292464256287
+2023/08/03 11:33:14:INFO:Predicted Debit at 2023-08-04 08:33:14.261764: 36.52
+2023/08/03 11:33:17:WARNING:Found untraced functions such as _update_step_xla, lstm_cell_layer_call_fn, lstm_cell_layer_call_and_return_conditional_losses while saving (showing 3 of 3). These functions will not be directly callable after loading.
+2023/08/03 11:33:17:INFO:Assets written to: C:\Users\Voli\Desktop\proiect_practica\ApplicationML\MachineLearningModel\assets
+2023/08/03 11:33:18:ERROR:name 'output_path' is not defined
+2023/08/03 11:33:18:INFO:Program has ended!
+2023/08/03 11:34:12:INFO:Program has started!
+2023/08/03 11:34:12:INFO:Training model...
+2023/08/03 11:34:29:INFO:Model is trained
+2023/08/03 11:34:29:INFO:Test Mean Squared Error: 0.9693136811256409
+2023/08/03 11:34:29:INFO:Predicted Debit at 2023-08-04 08:34:29.083474: 29.22
+2023/08/03 11:34:31:WARNING:Found untraced functions such as _update_step_xla, lstm_cell_layer_call_fn, lstm_cell_layer_call_and_return_conditional_losses while saving (showing 3 of 3). These functions will not be directly callable after loading.
+2023/08/03 11:34:32:INFO:Assets written to: C:\Users\Voli\Desktop\proiect_practica\ApplicationML\MachineLearningModel\assets
+2023/08/03 11:34:33:INFO:Using tensorflow=2.12.1, onnx=1.14.0, tf2onnx=1.14.0/8f8d49
+2023/08/03 11:34:33:INFO:Using opset <onnx, 13>
+2023/08/03 11:34:33:INFO:Computed 0 values for constant folding
+2023/08/03 11:34:33:INFO:Computed 0 values for constant folding
+2023/08/03 11:34:33:INFO:Computed 1 values for constant folding
+2023/08/03 11:34:33:INFO:folding node using tf type=StridedSlice, name=sequential/lstm/PartitionedCall/strided_slice
+2023/08/03 11:34:33:INFO:Optimizing ONNX model
+2023/08/03 11:34:33:INFO:After optimization: Cast -1 (3->2), Concat -1 (2->1), Const -20 (37->17), Expand -1 (2->1), Identity -2 (2->0), Squeeze -1 (3->2), Unsqueeze -5 (6->1)
+2023/08/03 11:34:33:INFO:Program has ended!
+2023/08/03 11:35:03:INFO:Program has started!
+2023/08/03 11:35:03:INFO:Training model...
+2023/08/03 11:35:19:INFO:Model is trained
+2023/08/03 11:35:20:INFO:Test Mean Squared Error: 0.8511958122253418
+2023/08/03 11:35:20:INFO:Predicted Debit at 2023-08-04 08:35:20.006175: 43.66
+2023/08/03 11:35:22:WARNING:Found untraced functions such as _update_step_xla, lstm_cell_layer_call_fn, lstm_cell_layer_call_and_return_conditional_losses while saving (showing 3 of 3). These functions will not be directly callable after loading.
+2023/08/03 11:35:23:INFO:Assets written to: C:\Users\Voli\Desktop\proiect_practica\ApplicationML\MachineLearningModel\assets
+2023/08/03 11:35:24:INFO:Using tensorflow=2.12.1, onnx=1.14.0, tf2onnx=1.14.0/8f8d49
+2023/08/03 11:35:24:INFO:Using opset <onnx, 13>
+2023/08/03 11:35:24:INFO:Computed 0 values for constant folding
+2023/08/03 11:35:24:INFO:Computed 0 values for constant folding
+2023/08/03 11:35:24:INFO:Computed 1 values for constant folding
+2023/08/03 11:35:24:INFO:folding node using tf type=StridedSlice, name=sequential/lstm/PartitionedCall/strided_slice
+2023/08/03 11:35:24:INFO:Optimizing ONNX model
+2023/08/03 11:35:24:INFO:After optimization: Cast -1 (3->2), Concat -1 (2->1), Const -20 (37->17), Expand -1 (2->1), Identity -2 (2->0), Squeeze -1 (3->2), Unsqueeze -5 (6->1)
+2023/08/03 11:35:24:ERROR:name 'unix_timestamp_to_predict' is not defined
+2023/08/03 11:35:24:INFO:Program has ended!
+2023/08/03 11:36:41:INFO:Program has started!
+2023/08/03 11:36:41:INFO:Training model...
+2023/08/03 11:36:58:INFO:Model is trained
+2023/08/03 11:36:58:INFO:Test Mean Squared Error: 1.1090766191482544
+2023/08/03 11:36:58:INFO:Predicted Debit at 2023-08-04 08:36:58.576500: 33.50
+2023/08/03 11:37:01:WARNING:Found untraced functions such as _update_step_xla, lstm_cell_layer_call_fn, lstm_cell_layer_call_and_return_conditional_losses while saving (showing 3 of 3). These functions will not be directly callable after loading.
+2023/08/03 11:37:02:INFO:Assets written to: C:\Users\Voli\Desktop\proiect_practica\ApplicationML\MachineLearningModel\assets
+2023/08/03 11:37:02:INFO:Using tensorflow=2.12.1, onnx=1.14.0, tf2onnx=1.14.0/8f8d49
+2023/08/03 11:37:02:INFO:Using opset <onnx, 13>
+2023/08/03 11:37:02:INFO:Computed 0 values for constant folding
+2023/08/03 11:37:02:INFO:Computed 0 values for constant folding
+2023/08/03 11:37:02:INFO:Computed 1 values for constant folding
+2023/08/03 11:37:02:INFO:folding node using tf type=StridedSlice, name=sequential/lstm/PartitionedCall/strided_slice
+2023/08/03 11:37:02:INFO:Optimizing ONNX model
+2023/08/03 11:37:02:INFO:After optimization: Cast -1 (3->2), Concat -1 (2->1), Const -20 (37->17), Expand -1 (2->1), Identity -2 (2->0), Squeeze -1 (3->2), Unsqueeze -5 (6->1)
+2023/08/03 11:37:02:ERROR:name 'timedelta' is not defined
+2023/08/03 11:37:02:INFO:Program has ended!
+2023/08/03 11:37:33:INFO:Program has started!
+2023/08/03 11:37:33:INFO:Training model...
+2023/08/03 11:37:49:INFO:Model is trained
+2023/08/03 11:37:49:INFO:Test Mean Squared Error: 1.1007384061813354
+2023/08/03 11:37:49:INFO:Predicted Debit at 2023-08-04 08:37:49.330835: 49.52
+2023/08/03 11:37:52:WARNING:Found untraced functions such as _update_step_xla, lstm_cell_layer_call_fn, lstm_cell_layer_call_and_return_conditional_losses while saving (showing 3 of 3). These functions will not be directly callable after loading.
+2023/08/03 11:37:52:INFO:Assets written to: C:\Users\Voli\Desktop\proiect_practica\ApplicationML\MachineLearningModel\assets
+2023/08/03 11:37:53:INFO:Using tensorflow=2.12.1, onnx=1.14.0, tf2onnx=1.14.0/8f8d49
+2023/08/03 11:37:53:INFO:Using opset <onnx, 13>
+2023/08/03 11:37:53:INFO:Computed 0 values for constant folding
+2023/08/03 11:37:53:INFO:Computed 0 values for constant folding
+2023/08/03 11:37:53:INFO:Computed 1 values for constant folding
+2023/08/03 11:37:53:INFO:folding node using tf type=StridedSlice, name=sequential/lstm/PartitionedCall/strided_slice
+2023/08/03 11:37:53:INFO:Optimizing ONNX model
+2023/08/03 11:37:53:INFO:After optimization: Cast -1 (3->2), Concat -1 (2->1), Const -20 (37->17), Expand -1 (2->1), Identity -2 (2->0), Squeeze -1 (3->2), Unsqueeze -5 (6->1)
+2023/08/03 11:37:53:ERROR:[ONNXRuntimeError] : 2 : INVALID_ARGUMENT : Unexpected input data type. Actual: (tensor(double)) , expected: (tensor(float))
+2023/08/03 11:37:53:INFO:Program has ended!
+2023/08/03 11:39:20:INFO:Program has started!
+2023/08/03 11:39:20:INFO:Training model...
+2023/08/03 11:39:36:INFO:Model is trained
+2023/08/03 11:39:36:INFO:Test Mean Squared Error: 0.6961593627929688
+2023/08/03 11:39:36:INFO:Predicted Debit at 2023-08-04 08:39:36.278001: 44.54
+2023/08/03 11:39:39:WARNING:Found untraced functions such as _update_step_xla, lstm_cell_layer_call_fn, lstm_cell_layer_call_and_return_conditional_losses while saving (showing 3 of 3). These functions will not be directly callable after loading.
+2023/08/03 11:39:39:INFO:Assets written to: C:\Users\Voli\Desktop\proiect_practica\ApplicationML\MachineLearningModel\assets
+2023/08/03 11:39:40:INFO:Using tensorflow=2.12.1, onnx=1.14.0, tf2onnx=1.14.0/8f8d49
+2023/08/03 11:39:40:INFO:Using opset <onnx, 13>
+2023/08/03 11:39:40:INFO:Computed 0 values for constant folding
+2023/08/03 11:39:40:INFO:Computed 0 values for constant folding
+2023/08/03 11:39:40:INFO:Computed 1 values for constant folding
+2023/08/03 11:39:40:INFO:folding node using tf type=StridedSlice, name=sequential/lstm/PartitionedCall/strided_slice
+2023/08/03 11:39:40:INFO:Optimizing ONNX model
+2023/08/03 11:39:40:INFO:After optimization: Cast -1 (3->2), Concat -1 (2->1), Const -20 (37->17), Expand -1 (2->1), Identity -2 (2->0), Squeeze -1 (3->2), Unsqueeze -5 (6->1)
+2023/08/03 11:39:40:ERROR:'numpy.ndarray' object has no attribute 'double'
+2023/08/03 11:39:40:INFO:Program has ended!
+2023/08/03 11:41:15:INFO:Program has started!
+2023/08/03 11:41:15:INFO:Training model...
+2023/08/03 11:41:31:INFO:Model is trained
+2023/08/03 11:41:31:INFO:Test Mean Squared Error: 1.0117859840393066
+2023/08/03 11:41:32:INFO:Predicted Debit at 2023-08-04 08:41:31.952729: 55.55
+2023/08/03 11:41:34:WARNING:Found untraced functions such as _update_step_xla, lstm_cell_layer_call_fn, lstm_cell_layer_call_and_return_conditional_losses while saving (showing 3 of 3). These functions will not be directly callable after loading.
+2023/08/03 11:41:35:INFO:Assets written to: C:\Users\Voli\Desktop\proiect_practica\ApplicationML\MachineLearningModel\assets
+2023/08/03 11:41:35:INFO:Using tensorflow=2.12.1, onnx=1.14.0, tf2onnx=1.14.0/8f8d49
+2023/08/03 11:41:35:INFO:Using opset <onnx, 13>
+2023/08/03 11:41:36:INFO:Computed 0 values for constant folding
+2023/08/03 11:41:36:INFO:Computed 0 values for constant folding
+2023/08/03 11:41:36:INFO:Computed 1 values for constant folding
+2023/08/03 11:41:36:INFO:folding node using tf type=StridedSlice, name=sequential/lstm/PartitionedCall/strided_slice
+2023/08/03 11:41:36:INFO:Optimizing ONNX model
+2023/08/03 11:41:36:INFO:After optimization: Cast -1 (3->2), Concat -1 (2->1), Const -20 (37->17), Expand -1 (2->1), Identity -2 (2->0), Squeeze -1 (3->2), Unsqueeze -5 (6->1)
+2023/08/03 11:41:36:ERROR:name 'decode_predictions' is not defined
+2023/08/03 11:41:36:INFO:Program has ended!
+2023/08/03 11:42:32:INFO:Program has started!
+2023/08/03 11:42:32:INFO:Training model...
+2023/08/03 11:42:48:INFO:Model is trained
+2023/08/03 11:42:48:INFO:Test Mean Squared Error: 0.9499408006668091
+2023/08/03 11:42:49:INFO:Predicted Debit at 2023-08-04 08:42:48.726505: 47.88
+2023/08/03 11:42:51:WARNING:Found untraced functions such as _update_step_xla, lstm_cell_layer_call_fn, lstm_cell_layer_call_and_return_conditional_losses while saving (showing 3 of 3). These functions will not be directly callable after loading.
+2023/08/03 11:42:52:INFO:Assets written to: C:\Users\Voli\Desktop\proiect_practica\ApplicationML\MachineLearningModel\assets
+2023/08/03 11:42:52:INFO:Using tensorflow=2.12.1, onnx=1.14.0, tf2onnx=1.14.0/8f8d49
+2023/08/03 11:42:52:INFO:Using opset <onnx, 13>
+2023/08/03 11:42:52:INFO:Computed 0 values for constant folding
+2023/08/03 11:42:52:INFO:Computed 0 values for constant folding
+2023/08/03 11:42:52:INFO:Computed 1 values for constant folding
+2023/08/03 11:42:52:INFO:folding node using tf type=StridedSlice, name=sequential/lstm/PartitionedCall/strided_slice
+2023/08/03 11:42:52:INFO:Optimizing ONNX model
+2023/08/03 11:42:52:INFO:After optimization: Cast -1 (3->2), Concat -1 (2->1), Const -20 (37->17), Expand -1 (2->1), Identity -2 (2->0), Squeeze -1 (3->2), Unsqueeze -5 (6->1)
+2023/08/03 11:42:52:ERROR:`decode_predictions` expects a batch of predictions (i.e. a 2D array of shape (samples, 1000)). Found array with shape: (1, 1)
+2023/08/03 11:42:52:INFO:Program has ended!
+2023/08/03 11:43:47:INFO:Program has started!
+2023/08/03 11:43:47:INFO:Training model...
+2023/08/03 11:44:03:INFO:Model is trained
+2023/08/03 11:44:03:INFO:Test Mean Squared Error: 0.7469092607498169
+2023/08/03 11:44:03:INFO:Predicted Debit at 2023-08-04 08:44:03.389029: 48.19
+2023/08/03 11:44:06:WARNING:Found untraced functions such as _update_step_xla, lstm_cell_layer_call_fn, lstm_cell_layer_call_and_return_conditional_losses while saving (showing 3 of 3). These functions will not be directly callable after loading.
+2023/08/03 11:44:06:INFO:Assets written to: C:\Users\Voli\Desktop\proiect_practica\ApplicationML\MachineLearningModel\assets
+2023/08/03 11:44:07:INFO:Using tensorflow=2.12.1, onnx=1.14.0, tf2onnx=1.14.0/8f8d49
+2023/08/03 11:44:07:INFO:Using opset <onnx, 13>
+2023/08/03 11:44:07:INFO:Computed 0 values for constant folding
+2023/08/03 11:44:07:INFO:Computed 0 values for constant folding
+2023/08/03 11:44:07:INFO:Computed 1 values for constant folding
+2023/08/03 11:44:07:INFO:folding node using tf type=StridedSlice, name=sequential/lstm/PartitionedCall/strided_slice
+2023/08/03 11:44:07:INFO:Optimizing ONNX model
+2023/08/03 11:44:07:INFO:After optimization: Cast -1 (3->2), Concat -1 (2->1), Const -20 (37->17), Expand -1 (2->1), Identity -2 (2->0), Squeeze -1 (3->2), Unsqueeze -5 (6->1)
+2023/08/03 11:44:07:ERROR:name 'preds' is not defined
+2023/08/03 11:44:07:INFO:Program has ended!
+2023/08/03 11:47:11:INFO:Program has started!
+2023/08/03 11:47:11:INFO:Training model...
+2023/08/03 11:47:28:INFO:Model is trained
+2023/08/03 11:47:28:INFO:Test Mean Squared Error: 1.0644150972366333
+2023/08/03 11:47:28:INFO:Predicted Debit at 2023-08-04 08:47:28.384330: 44.06
+2023/08/03 11:47:31:WARNING:Found untraced functions such as _update_step_xla, lstm_cell_layer_call_fn, lstm_cell_layer_call_and_return_conditional_losses while saving (showing 3 of 3). These functions will not be directly callable after loading.
+2023/08/03 11:47:31:INFO:Assets written to: C:\Users\Voli\Desktop\proiect_practica\ApplicationML\MachineLearningModel\assets
+2023/08/03 11:47:32:INFO:Using tensorflow=2.12.1, onnx=1.14.0, tf2onnx=1.14.0/8f8d49
+2023/08/03 11:47:32:INFO:Using opset <onnx, 13>
+2023/08/03 11:47:32:INFO:Computed 0 values for constant folding
+2023/08/03 11:47:32:INFO:Computed 0 values for constant folding
+2023/08/03 11:47:32:INFO:Computed 1 values for constant folding
+2023/08/03 11:47:32:INFO:folding node using tf type=StridedSlice, name=sequential/lstm/PartitionedCall/strided_slice
+2023/08/03 11:47:32:INFO:Optimizing ONNX model
+2023/08/03 11:47:32:INFO:After optimization: Cast -1 (3->2), Concat -1 (2->1), Const -20 (37->17), Expand -1 (2->1), Identity -2 (2->0), Squeeze -1 (3->2), Unsqueeze -5 (6->1)
+2023/08/03 11:47:32:INFO:Program has ended!
+2023/08/03 11:48:20:INFO:Program has started!
+2023/08/03 11:48:20:INFO:Training model...
+2023/08/03 11:48:38:INFO:Model is trained
+2023/08/03 11:48:38:INFO:Test Mean Squared Error: 1.144524097442627
+2023/08/03 11:48:38:INFO:Predicted Debit at 2023-08-04 08:48:38.109060: 37.83
+2023/08/03 11:48:41:WARNING:Found untraced functions such as _update_step_xla, lstm_cell_layer_call_fn, lstm_cell_layer_call_and_return_conditional_losses while saving (showing 3 of 3). These functions will not be directly callable after loading.
+2023/08/03 11:48:41:INFO:Assets written to: C:\Users\Voli\Desktop\proiect_practica\ApplicationML\MachineLearningModel\assets
+2023/08/03 11:48:42:INFO:Using tensorflow=2.12.1, onnx=1.14.0, tf2onnx=1.14.0/8f8d49
+2023/08/03 11:48:42:INFO:Using opset <onnx, 13>
+2023/08/03 11:48:42:INFO:Computed 0 values for constant folding
+2023/08/03 11:48:42:INFO:Computed 0 values for constant folding
+2023/08/03 11:48:42:INFO:Computed 1 values for constant folding
+2023/08/03 11:48:42:INFO:folding node using tf type=StridedSlice, name=sequential/lstm/PartitionedCall/strided_slice
+2023/08/03 11:48:42:INFO:Optimizing ONNX model
+2023/08/03 11:48:42:INFO:After optimization: Cast -1 (3->2), Concat -1 (2->1), Const -20 (37->17), Expand -1 (2->1), Identity -2 (2->0), Squeeze -1 (3->2), Unsqueeze -5 (6->1)
+2023/08/03 11:48:42:INFO:Program has ended!
+2023/08/03 11:49:14:INFO:Program has started!
+2023/08/03 11:49:14:INFO:Training model...
+2023/08/03 11:49:32:INFO:Model is trained
+2023/08/03 11:49:32:INFO:Test Mean Squared Error: 0.7619758248329163
+2023/08/03 11:49:32:INFO:Predicted Debit at 2023-08-04 08:49:32.197268: 45.53
+2023/08/03 11:49:35:WARNING:Found untraced functions such as _update_step_xla, lstm_cell_layer_call_fn, lstm_cell_layer_call_and_return_conditional_losses while saving (showing 3 of 3). These functions will not be directly callable after loading.
+2023/08/03 11:49:35:INFO:Assets written to: C:\Users\Voli\Desktop\proiect_practica\ApplicationML\MachineLearningModel\assets
+2023/08/03 11:49:36:INFO:Using tensorflow=2.12.1, onnx=1.14.0, tf2onnx=1.14.0/8f8d49
+2023/08/03 11:49:36:INFO:Using opset <onnx, 13>
+2023/08/03 11:49:36:INFO:Computed 0 values for constant folding
+2023/08/03 11:49:36:INFO:Computed 0 values for constant folding
+2023/08/03 11:49:36:INFO:Computed 1 values for constant folding
+2023/08/03 11:49:36:INFO:folding node using tf type=StridedSlice, name=sequential/lstm/PartitionedCall/strided_slice
+2023/08/03 11:49:36:INFO:Optimizing ONNX model
+2023/08/03 11:49:36:INFO:After optimization: Cast -1 (3->2), Concat -1 (2->1), Const -20 (37->17), Expand -1 (2->1), Identity -2 (2->0), Squeeze -1 (3->2), Unsqueeze -5 (6->1)
+2023/08/03 11:49:36:INFO:Program has ended!
+2023/08/03 11:49:57:INFO:Program has started!
+2023/08/03 11:49:57:INFO:Training model...
+2023/08/03 11:50:14:INFO:Model is trained
+2023/08/03 11:50:14:INFO:Test Mean Squared Error: 0.7001174688339233
+2023/08/03 11:50:15:INFO:Predicted Debit at 2023-08-04 08:50:14.704243: 44.32
+2023/08/03 11:50:17:WARNING:Found untraced functions such as _update_step_xla, lstm_cell_layer_call_fn, lstm_cell_layer_call_and_return_conditional_losses while saving (showing 3 of 3). These functions will not be directly callable after loading.
+2023/08/03 11:50:18:INFO:Assets written to: C:\Users\Voli\Desktop\proiect_practica\ApplicationML\MachineLearningModel\assets
+2023/08/03 11:50:18:INFO:Using tensorflow=2.12.1, onnx=1.14.0, tf2onnx=1.14.0/8f8d49
+2023/08/03 11:50:18:INFO:Using opset <onnx, 13>
+2023/08/03 11:50:18:INFO:Computed 0 values for constant folding
+2023/08/03 11:50:18:INFO:Computed 0 values for constant folding
+2023/08/03 11:50:18:INFO:Computed 1 values for constant folding
+2023/08/03 11:50:18:INFO:folding node using tf type=StridedSlice, name=sequential/lstm/PartitionedCall/strided_slice
+2023/08/03 11:50:19:INFO:Optimizing ONNX model
+2023/08/03 11:50:19:INFO:After optimization: Cast -1 (3->2), Concat -1 (2->1), Const -20 (37->17), Expand -1 (2->1), Identity -2 (2->0), Squeeze -1 (3->2), Unsqueeze -5 (6->1)
+2023/08/03 11:50:19:INFO:Program has ended!
+2023/08/03 12:01:28:INFO:Program has started!
+2023/08/03 12:01:28:INFO:Training model...
+2023/08/03 12:04:53:INFO:Model is trained
+2023/08/03 12:04:53:INFO:Test Mean Squared Error: 1.0980477333068848
+2023/08/03 12:04:53:INFO:Predicted Debit at 2023-08-04 09:04:53.441381: 28.90
+2023/08/03 12:04:56:WARNING:Found untraced functions such as _update_step_xla, lstm_cell_layer_call_fn, lstm_cell_layer_call_and_return_conditional_losses while saving (showing 3 of 3). These functions will not be directly callable after loading.
+2023/08/03 12:04:57:INFO:Assets written to: C:\Users\Voli\Desktop\proiect_practica\ApplicationML\MachineLearningModel\assets
+2023/08/03 12:04:57:INFO:Using tensorflow=2.12.1, onnx=1.14.0, tf2onnx=1.14.0/8f8d49
+2023/08/03 12:04:57:INFO:Using opset <onnx, 13>
+2023/08/03 12:04:57:INFO:Computed 0 values for constant folding
+2023/08/03 12:04:57:INFO:Computed 0 values for constant folding
+2023/08/03 12:04:57:INFO:Computed 1 values for constant folding
+2023/08/03 12:04:57:INFO:folding node using tf type=StridedSlice, name=sequential/lstm/PartitionedCall/strided_slice
+2023/08/03 12:04:57:INFO:Optimizing ONNX model
+2023/08/03 12:04:57:INFO:After optimization: Cast -1 (3->2), Concat -1 (2->1), Const -20 (37->17), Expand -1 (2->1), Identity -2 (2->0), Squeeze -1 (3->2), Unsqueeze -5 (6->1)
+2023/08/03 12:04:57:INFO:Program has ended!
+2023/08/03 13:15:07:INFO:Program has started!
+2023/08/03 13:15:07:INFO:Training model...
+2023/08/03 13:18:41:INFO:Model is trained
+2023/08/03 13:18:41:INFO:Test Mean Squared Error: 0.9406583905220032
+2023/08/03 13:18:42:INFO:Predicted Debit at 2023-08-04 10:18:41.898154: 12.81
+2023/08/03 13:18:44:WARNING:Found untraced functions such as _update_step_xla, lstm_cell_layer_call_fn, lstm_cell_layer_call_and_return_conditional_losses while saving (showing 3 of 3). These functions will not be directly callable after loading.
+2023/08/03 13:18:45:INFO:Assets written to: C:\Users\Voli\Desktop\proiect_practica\ApplicationML\MachineLearningModel\assets
+2023/08/03 13:18:45:INFO:Using tensorflow=2.12.1, onnx=1.14.0, tf2onnx=1.14.0/8f8d49
+2023/08/03 13:18:45:INFO:Using opset <onnx, 13>
+2023/08/03 13:18:45:INFO:Computed 0 values for constant folding
+2023/08/03 13:18:45:INFO:Computed 0 values for constant folding
+2023/08/03 13:18:45:INFO:Computed 1 values for constant folding
+2023/08/03 13:18:45:INFO:folding node using tf type=StridedSlice, name=sequential/lstm/PartitionedCall/strided_slice
+2023/08/03 13:18:46:INFO:Optimizing ONNX model
+2023/08/03 13:18:46:INFO:After optimization: Cast -1 (3->2), Concat -1 (2->1), Const -20 (37->17), Expand -1 (2->1), Identity -2 (2->0), Squeeze -1 (3->2), Unsqueeze -5 (6->1)
+2023/08/03 13:18:46:INFO:Program has ended!

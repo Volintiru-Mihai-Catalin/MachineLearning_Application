@@ -32,9 +32,11 @@ class MainApplication:
 			self.ml_instance = MachineLearning(self.config_data['csv_file'], self.config_data['epochs'], self.config_data['batch_size'], self.log)
 			self.ml_instance.train_model()
 
-			while(True):
-				self.ml_instance.model_predict(datetime.utcnow() + timedelta(days=1))
-				time.sleep(self.config_data['daemon_time'])
+			self.ml_instance.model_predict(datetime.utcnow() + timedelta(days=1))
+
+			# while(True):
+			# 	self.ml_instance.model_predict(datetime.utcnow() + timedelta(days=1))
+			# 	time.sleep(self.config_data['daemon_time'])
 
 
 		except Exception as e:
