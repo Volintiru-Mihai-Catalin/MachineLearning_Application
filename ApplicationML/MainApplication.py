@@ -1,14 +1,14 @@
 from __future__ import absolute_import, division, print_function, unicode_literals
 
+import time
+from datetime import datetime, timedelta
 from constants.Constants import Constants
 from helpers.Logger import Logger
 from helpers.Parsers import ArgsParser, DataParser
 from helpers.Validator import Validator
 from helpers.CsvReader import CsvReader
+from OnnxRunner import OnnxRunner
 from machine_learning.MachineLearning import MachineLearning
-
-import time
-from datetime import datetime, timedelta
 
 
 class MainApplication:
@@ -29,15 +29,17 @@ class MainApplication:
 			self.log.info("Program has started!")
 			self.validator.validate()
 			self.config_data = DataParser.parse_json(self.args.config)
-			self.ml_instance = MachineLearning(self.config_data['csv_file'], self.config_data['epochs'], self.config_data['batch_size'], self.log)
+			self.ml_instance = MachineLearning(self.config_data['csv_file'], 
+				self.config_data['epochs'], self.config_data['batch_size'], 
+				self.config_data['sequence_length'], self.log)
+			
 			self.ml_instance.train_model()
 
-			self.ml_instance.model_predict(datetime.utcnow() + timedelta(days=1))
-
-			# while(True):
-			# 	self.ml_instance.model_predict(datetime.utcnow() + timedelta(days=1))
-			# 	time.sleep(self.config_data['daemon_time'])
-
+			OnnxRunner.convert_to_onnx(self.config_data['output_path'], self.ml_instance.model)
+			OnnxRunner.onnx_runner(datetime.utcnow() + timedelta(days=1), 
+				self.config_data['sequence_length'], self.ml_instance.data, 
+				self.ml_instance.std_debit, self.ml_instance.mean_debit, 
+				self.ml_instance.output_names, self.ml_instance.output_path, self.log)
 
 		except Exception as e:
 			self.log.error(e)

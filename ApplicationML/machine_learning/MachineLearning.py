@@ -2,16 +2,14 @@ import os
 import numpy as np
 import pandas as pd
 import tensorflow as tf
-from sklearn.model_selection import train_test_split
 from datetime import datetime, timedelta
-
-import tf2onnx
-import onnxruntime as rt
+from sklearn.model_selection import train_test_split
+from OnnxRunner import OnnxRunner
 
 
 class MachineLearning:
 	
-	def __init__(self, csv_file, epochs, batch_size, log):
+	def __init__(self, csv_file, epochs, batch_size, sequence_length, log):
 		self.csv_file = csv_file
 		self.epochs = epochs
 		self.batch_size = batch_size
@@ -20,10 +18,10 @@ class MachineLearning:
 		self.data = pd.read_csv(self.csv_file)
 		self.mean_debit = None
 		self.std_debit = None
-		self.sequence_length = 30
+		self.sequence_length = sequence_length
 		self.model = None
-		self.output_path = None
 		self.output_names = None
+		self.output_path = "MachineLearningModel.onnx"
 
 	def utc_to_unix(self, utc_timestamp):
 		utc_datetime = datetime.strptime(utc_timestamp, "%d.%m.%Y %H:%M:%S")
@@ -86,30 +84,7 @@ class MachineLearning:
 
 		self.model.save(os.path.join(os.getcwd(), "MachineLearningModel"))
 
-		self.convert_to_onnx()
-
 		return
-
-	def convert_to_onnx(self):
-		spec = (tf.TensorSpec((None, 30, 1), tf.float32, name="input"),)
-		self.output_path = "MachineLearningModel" + ".onnx"
-		
-		model_proto, _ = tf2onnx.convert.from_keras(self.model, input_signature=spec, opset=13, output_path=self.output_path)
-		self.output_names = [n.name for n in model_proto.graph.output]
-		self.onnx_runner(datetime.utcnow() + timedelta(days=1))
-
-	def onnx_runner(self, data_stamp):
-		
-		providers = ['CPUExecutionProvider']
-		m = rt.InferenceSession(self.output_path, providers=providers)
-
-		unix_timestamp_to_predict = int(data_stamp.timestamp())
-		input_sequence = self.data[self.data['ts'] < unix_timestamp_to_predict].tail(self.sequence_length)
-		input_sequence = input_sequence['normalized_Flow'].values.reshape(1, -1, 1)
-
-		onnx_pred = m.run(self.output_names, {"input": input_sequence.astype(np.float32)})
-
-		print(onnx_pred[0][0][0] * self.std_debit + self.mean_debit)
 
 		# l/min
 		# compresor car scoate 12 bari si debit de 50 l pe minut -> ce consum are un astfel de compresor -> cost
