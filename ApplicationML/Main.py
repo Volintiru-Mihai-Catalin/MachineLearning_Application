@@ -1,7 +1,12 @@
+import pickle
 from datetime import datetime, timedelta
 
-from OnnxRunner import OnnxRunner
+from onnx_runner.OnnxRunner import OnnxRunner
 
 
 if __name__ == "__main__":
-	pass
+	file = "output.pkl"
+	with open(file, "rb") as f:
+		metadata = pickle.load(f)
+	
+	OnnxRunner.onnx_runner(metadata) 

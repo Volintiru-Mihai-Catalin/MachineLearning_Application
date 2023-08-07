@@ -1,102 +1,53 @@
-2023/08/04 11:49:51:INFO:Program has started!
-2023/08/04 11:49:51:INFO:Training model...
-2023/08/04 11:49:55:INFO:Program has ended!
-2023/08/04 11:50:10:INFO:Program has started!
-2023/08/04 11:50:10:INFO:Training model...
-2023/08/04 11:50:26:INFO:Model is trained
-2023/08/04 11:50:26:INFO:Test Mean Squared Error: 0.9664126634597778
-2023/08/04 11:50:26:INFO:Predicted Debit at 2023-08-05 08:50:26.197737: 46.26
-2023/08/04 11:50:28:WARNING:Found untraced functions such as _update_step_xla, lstm_cell_layer_call_fn, lstm_cell_layer_call_and_return_conditional_losses while saving (showing 3 of 3). These functions will not be directly callable after loading.
-2023/08/04 11:50:29:INFO:Assets written to: C:\Users\Voli\Desktop\proiect_practica\ApplicationML\MachineLearningModel\assets
-2023/08/04 11:50:30:INFO:Using tensorflow=2.12.1, onnx=1.14.0, tf2onnx=1.14.0/8f8d49
-2023/08/04 11:50:30:INFO:Using opset <onnx, 13>
-2023/08/04 11:50:30:INFO:Computed 0 values for constant folding
-2023/08/04 11:50:30:INFO:Computed 0 values for constant folding
-2023/08/04 11:50:30:INFO:Computed 1 values for constant folding
-2023/08/04 11:50:30:INFO:folding node using tf type=StridedSlice, name=sequential/lstm/PartitionedCall/strided_slice
-2023/08/04 11:50:30:INFO:Optimizing ONNX model
-2023/08/04 11:50:30:INFO:After optimization: Cast -1 (3->2), Concat -1 (2->1), Const -20 (37->17), Expand -1 (2->1), Identity -2 (2->0), Squeeze -1 (3->2), Unsqueeze -5 (6->1)
-2023/08/04 11:50:30:INFO:Program has ended!
-2023/08/04 11:51:38:INFO:Program has started!
-2023/08/04 11:51:38:INFO:Training model...
-2023/08/04 11:51:54:INFO:Model is trained
-2023/08/04 11:51:54:INFO:Test Mean Squared Error: 1.032230019569397
-2023/08/04 11:51:54:INFO:Predicted Debit at 2023-08-05 08:51:54.576746: 47.62
-2023/08/04 11:51:57:WARNING:Found untraced functions such as _update_step_xla, lstm_cell_layer_call_fn, lstm_cell_layer_call_and_return_conditional_losses while saving (showing 3 of 3). These functions will not be directly callable after loading.
-2023/08/04 11:51:57:INFO:Assets written to: C:\Users\Voli\Desktop\proiect_practica\ApplicationML\MachineLearningModel\assets
-2023/08/04 11:51:58:INFO:Using tensorflow=2.12.1, onnx=1.14.0, tf2onnx=1.14.0/8f8d49
-2023/08/04 11:51:58:INFO:Using opset <onnx, 13>
-2023/08/04 11:51:58:INFO:Computed 0 values for constant folding
-2023/08/04 11:51:58:INFO:Computed 0 values for constant folding
-2023/08/04 11:51:58:INFO:Computed 1 values for constant folding
-2023/08/04 11:51:58:INFO:folding node using tf type=StridedSlice, name=sequential/lstm/PartitionedCall/strided_slice
-2023/08/04 11:51:58:INFO:Optimizing ONNX model
-2023/08/04 11:51:58:INFO:After optimization: Cast -1 (3->2), Concat -1 (2->1), Const -20 (37->17), Expand -1 (2->1), Identity -2 (2->0), Squeeze -1 (3->2), Unsqueeze -5 (6->1)
-2023/08/04 11:51:58:INFO:Program has ended!
-2023/08/04 11:56:37:INFO:Program has started!
-2023/08/04 11:56:37:INFO:Training model...
-2023/08/04 11:56:53:INFO:Model is trained
-2023/08/04 11:56:53:INFO:Test Mean Squared Error: 0.6501293778419495
-2023/08/04 11:56:54:INFO:Using tensorflow=2.12.1, onnx=1.14.0, tf2onnx=1.14.0/8f8d49
-2023/08/04 11:56:54:INFO:Using opset <onnx, 13>
-2023/08/04 11:56:54:INFO:Computed 0 values for constant folding
-2023/08/04 11:56:54:INFO:Computed 0 values for constant folding
-2023/08/04 11:56:54:INFO:Computed 1 values for constant folding
-2023/08/04 11:56:54:INFO:folding node using tf type=StridedSlice, name=sequential/lstm/PartitionedCall/strided_slice
-2023/08/04 11:56:54:INFO:Optimizing ONNX model
-2023/08/04 11:56:54:INFO:After optimization: Cast -1 (3->2), Concat -1 (2->1), Const -20 (37->17), Expand -1 (2->1), Identity -2 (2->0), Squeeze -1 (3->2), Unsqueeze -5 (6->1)
-2023/08/04 11:56:54:INFO:Program has ended!
-2023/08/04 12:06:50:INFO:Program has started!
-2023/08/04 12:06:50:INFO:Training model...
-2023/08/04 12:07:06:INFO:Model is trained
-2023/08/04 12:07:06:INFO:Test Mean Squared Error: 0.6754311323165894
-2023/08/04 12:07:06:INFO:Using tensorflow=2.12.1, onnx=1.14.0, tf2onnx=1.14.0/8f8d49
-2023/08/04 12:07:06:INFO:Using opset <onnx, 13>
-2023/08/04 12:07:06:INFO:Computed 0 values for constant folding
-2023/08/04 12:07:06:INFO:Computed 0 values for constant folding
-2023/08/04 12:07:06:INFO:Computed 1 values for constant folding
-2023/08/04 12:07:06:INFO:folding node using tf type=StridedSlice, name=sequential/lstm/PartitionedCall/strided_slice
-2023/08/04 12:07:06:INFO:Optimizing ONNX model
-2023/08/04 12:07:06:INFO:After optimization: Cast -1 (3->2), Concat -1 (2->1), Const -20 (37->17), Expand -1 (2->1), Identity -2 (2->0), Squeeze -1 (3->2), Unsqueeze -5 (6->1)
-2023/08/04 12:07:06:INFO:Program has ended!
-2023/08/04 12:10:12:INFO:Program has started!
-2023/08/04 12:10:12:INFO:Training model...
-2023/08/04 12:10:28:INFO:Model is trained
-2023/08/04 12:10:28:INFO:Test Mean Squared Error: 0.682551920413971
-2023/08/04 12:10:29:INFO:Using tensorflow=2.12.1, onnx=1.14.0, tf2onnx=1.14.0/8f8d49
-2023/08/04 12:10:29:INFO:Using opset <onnx, 13>
-2023/08/04 12:10:29:INFO:Computed 0 values for constant folding
-2023/08/04 12:10:29:INFO:Computed 0 values for constant folding
-2023/08/04 12:10:29:INFO:Computed 1 values for constant folding
-2023/08/04 12:10:29:INFO:folding node using tf type=StridedSlice, name=sequential/lstm/PartitionedCall/strided_slice
-2023/08/04 12:10:29:INFO:Optimizing ONNX model
-2023/08/04 12:10:29:INFO:After optimization: Cast -1 (3->2), Concat -1 (2->1), Const -20 (37->17), Expand -1 (2->1), Identity -2 (2->0), Squeeze -1 (3->2), Unsqueeze -5 (6->1)
-2023/08/04 12:10:29:INFO:Program has ended!
-2023/08/04 12:13:47:INFO:Program has started!
-2023/08/04 12:13:47:INFO:Training model...
-2023/08/04 12:14:02:INFO:Model is trained
-2023/08/04 12:14:02:INFO:Test Mean Squared Error: 0.7606385946273804
-2023/08/04 12:14:03:INFO:Using tensorflow=2.12.1, onnx=1.14.0, tf2onnx=1.14.0/8f8d49
-2023/08/04 12:14:03:INFO:Using opset <onnx, 13>
-2023/08/04 12:14:03:INFO:Computed 0 values for constant folding
-2023/08/04 12:14:03:INFO:Computed 0 values for constant folding
-2023/08/04 12:14:03:INFO:Computed 1 values for constant folding
-2023/08/04 12:14:03:INFO:folding node using tf type=StridedSlice, name=sequential/lstm/PartitionedCall/strided_slice
-2023/08/04 12:14:03:INFO:Optimizing ONNX model
-2023/08/04 12:14:03:INFO:After optimization: Cast -1 (3->2), Concat -1 (2->1), Const -20 (37->17), Expand -1 (2->1), Identity -2 (2->0), Squeeze -1 (3->2), Unsqueeze -5 (6->1)
-2023/08/04 12:14:03:ERROR:name 'self' is not defined
-2023/08/04 12:14:03:INFO:Program has ended!
-2023/08/04 12:14:18:INFO:Program has started!
-2023/08/04 12:14:18:INFO:Training model...
-2023/08/04 12:14:34:INFO:Model is trained
-2023/08/04 12:14:34:INFO:Test Mean Squared Error: 0.738864004611969
-2023/08/04 12:14:34:INFO:Using tensorflow=2.12.1, onnx=1.14.0, tf2onnx=1.14.0/8f8d49
-2023/08/04 12:14:34:INFO:Using opset <onnx, 13>
-2023/08/04 12:14:34:INFO:Computed 0 values for constant folding
-2023/08/04 12:14:34:INFO:Computed 0 values for constant folding
-2023/08/04 12:14:34:INFO:Computed 1 values for constant folding
-2023/08/04 12:14:34:INFO:folding node using tf type=StridedSlice, name=sequential/lstm/PartitionedCall/strided_slice
-2023/08/04 12:14:34:INFO:Optimizing ONNX model
-2023/08/04 12:14:34:INFO:After optimization: Cast -1 (3->2), Concat -1 (2->1), Const -20 (37->17), Expand -1 (2->1), Identity -2 (2->0), Squeeze -1 (3->2), Unsqueeze -5 (6->1)
-2023/08/04 12:14:34:INFO:The predicted debit is: 28.698311186874285
-2023/08/04 12:14:34:INFO:Program has ended!
+2023-08-07 21:47:09 GTB Daylight Time:INFO:Program has started!
+2023-08-07 21:47:10 GTB Daylight Time:INFO:Training model...
+2023-08-07 21:48:02 GTB Daylight Time:INFO:Model is trained
+2023-08-07 21:48:02 GTB Daylight Time:INFO:Test Mean Squared Error: 0.913580060005188
+2023-08-07 21:48:02 GTB Daylight Time:INFO:Using tensorflow=2.12.1, onnx=1.14.0, tf2onnx=1.14.0/8f8d49
+2023-08-07 21:48:02 GTB Daylight Time:INFO:Using opset <onnx, 13>
+2023-08-07 21:48:03 GTB Daylight Time:INFO:Computed 0 values for constant folding
+2023-08-07 21:48:03 GTB Daylight Time:INFO:Computed 0 values for constant folding
+2023-08-07 21:48:03 GTB Daylight Time:INFO:Computed 1 values for constant folding
+2023-08-07 21:48:03 GTB Daylight Time:INFO:folding node using tf type=StridedSlice, name=sequential/lstm/PartitionedCall/strided_slice
+2023-08-07 21:48:03 GTB Daylight Time:INFO:Optimizing ONNX model
+2023-08-07 21:48:03 GTB Daylight Time:INFO:After optimization: Cast -1 (3->2), Concat -1 (2->1), Const -20 (37->17), Expand -1 (2->1), Identity -2 (2->0), Squeeze -1 (3->2), Unsqueeze -5 (6->1)
+2023-08-07 21:48:03 GTB Daylight Time:INFO:Program has ended!
+2023-08-07 21:49:04 GTB Daylight Time:INFO:Program has started!
+2023-08-07 21:49:05 GTB Daylight Time:INFO:Training model...
+2023-08-07 21:49:57 GTB Daylight Time:INFO:Model is trained
+2023-08-07 21:49:57 GTB Daylight Time:INFO:Test Mean Squared Error: 0.7039215564727783
+2023-08-07 21:49:58 GTB Daylight Time:INFO:Using tensorflow=2.12.1, onnx=1.14.0, tf2onnx=1.14.0/8f8d49
+2023-08-07 21:49:58 GTB Daylight Time:INFO:Using opset <onnx, 13>
+2023-08-07 21:49:58 GTB Daylight Time:INFO:Computed 0 values for constant folding
+2023-08-07 21:49:58 GTB Daylight Time:INFO:Computed 0 values for constant folding
+2023-08-07 21:49:58 GTB Daylight Time:INFO:Computed 1 values for constant folding
+2023-08-07 21:49:58 GTB Daylight Time:INFO:folding node using tf type=StridedSlice, name=sequential/lstm/PartitionedCall/strided_slice
+2023-08-07 21:49:58 GTB Daylight Time:INFO:Optimizing ONNX model
+2023-08-07 21:49:58 GTB Daylight Time:INFO:After optimization: Cast -1 (3->2), Concat -1 (2->1), Const -20 (37->17), Expand -1 (2->1), Identity -2 (2->0), Squeeze -1 (3->2), Unsqueeze -5 (6->1)
+2023-08-07 21:49:58 GTB Daylight Time:INFO:Program has ended!
+2023-08-07 21:50:56 GTB Daylight Time:INFO:Program has started!
+2023-08-07 21:50:57 GTB Daylight Time:INFO:Training model...
+2023-08-07 21:51:49 GTB Daylight Time:INFO:Model is trained
+2023-08-07 21:51:49 GTB Daylight Time:INFO:Test Mean Squared Error: 1.0116106271743774
+2023-08-07 21:51:50 GTB Daylight Time:INFO:Using tensorflow=2.12.1, onnx=1.14.0, tf2onnx=1.14.0/8f8d49
+2023-08-07 21:51:50 GTB Daylight Time:INFO:Using opset <onnx, 13>
+2023-08-07 21:51:50 GTB Daylight Time:INFO:Computed 0 values for constant folding
+2023-08-07 21:51:50 GTB Daylight Time:INFO:Computed 0 values for constant folding
+2023-08-07 21:51:50 GTB Daylight Time:INFO:Computed 1 values for constant folding
+2023-08-07 21:51:50 GTB Daylight Time:INFO:folding node using tf type=StridedSlice, name=sequential/lstm/PartitionedCall/strided_slice
+2023-08-07 21:51:50 GTB Daylight Time:INFO:Optimizing ONNX model
+2023-08-07 21:51:50 GTB Daylight Time:INFO:After optimization: Cast -1 (3->2), Concat -1 (2->1), Const -20 (37->17), Expand -1 (2->1), Identity -2 (2->0), Squeeze -1 (3->2), Unsqueeze -5 (6->1)
+2023-08-07 21:51:50 GTB Daylight Time:ERROR:name 'log' is not defined
+2023-08-07 21:51:50 GTB Daylight Time:INFO:Program has ended!
+2023-08-07 21:52:40 GTB Daylight Time:INFO:Program has started!
+2023-08-07 21:52:41 GTB Daylight Time:INFO:Training model...
+2023-08-07 21:53:32 GTB Daylight Time:INFO:Model is trained
+2023-08-07 21:53:32 GTB Daylight Time:INFO:Test Mean Squared Error: 0.7889758348464966
+2023-08-07 21:53:33 GTB Daylight Time:INFO:Using tensorflow=2.12.1, onnx=1.14.0, tf2onnx=1.14.0/8f8d49
+2023-08-07 21:53:33 GTB Daylight Time:INFO:Using opset <onnx, 13>
+2023-08-07 21:53:33 GTB Daylight Time:INFO:Computed 0 values for constant folding
+2023-08-07 21:53:33 GTB Daylight Time:INFO:Computed 0 values for constant folding
+2023-08-07 21:53:33 GTB Daylight Time:INFO:Computed 1 values for constant folding
+2023-08-07 21:53:33 GTB Daylight Time:INFO:folding node using tf type=StridedSlice, name=sequential/lstm/PartitionedCall/strided_slice
+2023-08-07 21:53:33 GTB Daylight Time:INFO:Optimizing ONNX model
+2023-08-07 21:53:33 GTB Daylight Time:INFO:After optimization: Cast -1 (3->2), Concat -1 (2->1), Const -20 (37->17), Expand -1 (2->1), Identity -2 (2->0), Squeeze -1 (3->2), Unsqueeze -5 (6->1)
+2023-08-07 21:53:33 GTB Daylight Time:INFO:Program has ended!

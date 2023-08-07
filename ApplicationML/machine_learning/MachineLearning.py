@@ -3,8 +3,8 @@ import numpy as np
 import pandas as pd
 import tensorflow as tf
 from datetime import datetime, timedelta
+from constants.Constants import Constants
 from sklearn.model_selection import train_test_split
-from OnnxRunner import OnnxRunner
 
 
 class MachineLearning:
@@ -24,7 +24,7 @@ class MachineLearning:
 		self.output_path = "MachineLearningModel.onnx"
 
 	def utc_to_unix(self, utc_timestamp):
-		utc_datetime = datetime.strptime(utc_timestamp, "%d.%m.%Y %H:%M:%S")
+		utc_datetime = datetime.strptime(utc_timestamp, Constants.DATEFORMAT.value)
 		return int(utc_datetime.timestamp())
 
 	def train_model(self):
