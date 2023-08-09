@@ -32,8 +32,11 @@ class MainApplication:
 			self.log.info("Program has started!")
 			self.validator.validate()
 			self.config_data = DataParser.parse_json(self.args.config)
-			self.database = DataBase(self.config_data['credentials'])
-			self.training_csv = self.database.download_csv(self.config_data['csv_path'], self.config_data['bucket'], self.config_data['blob'])
+			self.database = DataBase(self.config_data['credentials'], self.config_data['csv_path'],
+				self.config_data['project_id'], self.config_data['dataset_id'], 
+				self.config_data['table_id'])
+			
+			self.training_csv = self.database.read_from_bigquery()
 			self.ml_instance = MachineLearning(self.training_csv, 
 				self.config_data['epochs'], self.config_data['batch_size'], 
 				self.config_data['sequence_length'], self.log)
