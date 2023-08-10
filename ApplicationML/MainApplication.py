@@ -44,9 +44,9 @@ class MainApplication:
 			self.ml_instance.train_model()
 
 			OnnxRunner.convert_to_onnx(self.config_data['model_output_name'], self.ml_instance.model)
-			self.output_instance = OutputHelper(datetime.utcnow() + timedelta(days=1), 
+			self.output_instance = OutputHelper(self.config_data['number_of_days'], 
 				self.config_data['sequence_length'], self.ml_instance.data, 
-				self.ml_instance.std_debit, self.ml_instance.mean_debit, 
+				self.ml_instance.std_debit, self.ml_instance.mean_debit,
 				self.ml_instance.output_names, self.ml_instance.output_path)
 
 			self.output_instance.output_formater(self.config_data['metadata_output_name'])

@@ -70,21 +70,3 @@ class MachineLearning:
 		self.log.info("Test Mean Squared Error: {0}".format(mse))
 
 		return
-
-	def model_predict(self, data_stamp):
-
-		unix_timestamp_to_predict = int(data_stamp.timestamp())
-		input_sequence = self.data[self.data['ts'] < unix_timestamp_to_predict].tail(self.sequence_length)
-		input_sequence = input_sequence['normalized_Flow'].values.reshape(1, -1, 1)
-
-		predicted_normalized_debit = self.model.predict(input_sequence)[0][0]
-		predicted_debit = predicted_normalized_debit * self.std_debit + self.mean_debit
-
-		self.log.info("Predicted Debit at {0}: {1:.2f}".format(data_stamp, predicted_debit))
-
-		self.model.save(os.path.join(os.getcwd(), "MachineLearningModel"))
-
-		return
-
-		# l/min
-		# compresor car scoate 12 bari si debit de 50 l pe minut -> ce consum are un astfel de compresor -> cost
