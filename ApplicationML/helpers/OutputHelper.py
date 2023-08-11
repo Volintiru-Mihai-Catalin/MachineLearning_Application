@@ -1,10 +1,8 @@
 import pickle
 
 class OutputHelper:
-	def __init__(self, number_of_days, sequence_length, data, std_debit, mean_debit, output_names, output_path):
-		self.number_of_days = number_of_days
-		self.sequence_length = sequence_length
-		self.data = data
+	def __init__(self, config_path, std_debit, mean_debit, output_names, output_path):
+		self.config_path = config_path
 		self.std_debit = std_debit
 		self.mean_debit = mean_debit
 		self.output_names = output_names

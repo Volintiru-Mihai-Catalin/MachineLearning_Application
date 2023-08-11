@@ -34,7 +34,7 @@ class MainApplication:
 			self.config_data = DataParser.parse_json(self.args.config)
 			self.database = DataBase(self.config_data['credentials'], self.config_data['csv_path'],
 				self.config_data['project_id'], self.config_data['dataset_id'], 
-				self.config_data['table_id'])
+				self.config_data['table_id'], self.config_data['sequence_length'])
 			
 			self.training_csv = self.database.read_from_bigquery()
 			self.ml_instance = MachineLearning(self.training_csv, 
@@ -43,11 +43,11 @@ class MainApplication:
 			
 			self.ml_instance.train_model()
 
-			OnnxRunner.convert_to_onnx(self.config_data['model_output_name'], self.ml_instance.model)
-			self.output_instance = OutputHelper(self.config_data['number_of_days'], 
-				self.config_data['sequence_length'], self.ml_instance.data, 
-				self.ml_instance.std_debit, self.ml_instance.mean_debit,
-				self.ml_instance.output_names, self.ml_instance.output_path)
+			OnnxRunner.convert_to_onnx(self.config_data['model_output_name'], self.ml_instance.model,
+				self.config_data['sequence_length'])
+			self.output_instance = OutputHelper(self.args.config, self.ml_instance.std_debit,
+				self.ml_instance.mean_debit, self.ml_instance.output_names, 
+				self.ml_instance.output_path)
 
 			self.output_instance.output_formater(self.config_data['metadata_output_name'])
 			
