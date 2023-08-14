@@ -1,6 +1,4 @@
 import os
-import csv
-import pandas as pd
 from google.cloud import storage
 from google.cloud import bigquery
 from constants.Constants import Constants

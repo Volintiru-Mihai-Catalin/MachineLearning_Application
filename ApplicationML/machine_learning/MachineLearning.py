@@ -1,8 +1,6 @@
-import os
 import numpy as np
 import pandas as pd
 import tensorflow as tf
-from datetime import datetime, timedelta
 from constants.Constants import Constants
 from sklearn.model_selection import train_test_split
 
@@ -23,14 +21,8 @@ class MachineLearning:
 		self.output_names = None
 		self.output_path = "MachineLearningModel.onnx"
 
-	def utc_to_unix(self, utc_timestamp):
-		utc_datetime = datetime.strptime(utc_timestamp, Constants.DATEFORMAT.value)
-		return int(utc_datetime.timestamp())
-
 	def train_model(self):
 		self.log.info("Training model...")
-
-		self.data['ts'] = self.data['ts'].apply(lambda x: self.utc_to_unix(x))
 
 		self.data = self.data.sort_values(by='ts')
 
