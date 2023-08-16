@@ -25,8 +25,12 @@ class MainApplication:
 	def execute(self):
 		try:
 			self.log.info("Program has started!")
+
+			# se valideaza fisierul de configuratie
 			self.validator.validate()
 			self.config_data = DataParser.parse_json(self.args.config)
+
+			# se initializeaza baza de date
 			self.database = DataBase(self.config_data['credentials'], self.config_data['csv_path'],
 				self.config_data['project_id'], self.config_data['dataset_id'], 
 				self.config_data['table_id'], self.config_data['sequence_length'])
@@ -38,12 +42,14 @@ class MainApplication:
 			
 			self.ml_instance.train_model()
 
+			# se salveaza modelul in format ONNX
 			OnnxRunner.convert_to_onnx(self.config_data['model_output_name'], self.ml_instance.model,
 				self.config_data['sequence_length'])
 			self.output_instance = OutputHelper(self.args.config, self.ml_instance.std_debit,
 				self.ml_instance.mean_debit, self.ml_instance.output_names, 
 				self.ml_instance.output_path)
 
+			# se salveaza output-ul pentru urmatoarea aplicatie
 			self.output_instance.output_formater(self.config_data['metadata_output_name'])
 			
 		except Exception as e:
@@ -55,7 +61,9 @@ class MainApplication:
 
 if __name__ == "__main__":
 	
+	# parseaza argumentele
 	args = ArgsParser.parse_arguments()
+	
 	log = Logger.setup_logging(args.logfile)
 	validator = Validator(args.config, args.logfile)
 	app = MainApplication(args, log, validator)
