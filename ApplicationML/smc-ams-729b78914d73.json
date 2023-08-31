@@ -1,13 +1,3 @@
 {
-  "type": "service_account",
-  "project_id": "smc-ams",
-  "private_key_id": "729b78914d737c9868185a5445afbcaa6bafa835",
-  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC0U17m+aPpBRs2\nyzecVCYeBb/4GFGWVE8pIbjx8t+zy05clIrly8IyVItpZTVMKSaOl9g32ZELugU/\nttOwpMwtPSuCxQ/bHDJu3BkHgAc8kMWUgrjcWj7eTTZPWvqCiM7evt6r8nnVbc0B\n+SNA1QlEmhZBBPBlr5D56zqyMdjwupFcS6r1t/VP8TEu02YM+lNzF9RWe4pvzAnE\nP4lJlWexes9pCVWcSa6KkaNowMf0kSr+leVqSGI59ry2UdL53D18XpiooGJ24Z4U\nXyRd/EjUhnZUFqN4HA3W135slp1jmEyZ584+v9CfZupUC2WcoD9Z/MIoKhnRv5Sc\nOqvPjjHLAgMBAAECggEAPdy4Gv8bdy5URrjyrAPGS9hnIiKdorfrrE2wV/idO94M\nVQB0oh8D0SZl6VNaNHWNj6+R8p8F/oLjmBcNinUOwppQmf0m0mFa/+MsBwGp+eIk\nli0+ZAHlvXe5oQGyHSP37DyIwW5e05Rmlz20FWLAWjOOXOHn4sqXLtW+/jDRnsud\nINCtPmSFNoN59CmiepWfbk6kkjfDIZRjWdS9BkZokIxPcJq7axng3xFyJTBneJHY\nUU018sS4REKCk5G1eGShI6S0XJf+QVQtHECvG51thU4c9UVkvfHeW/LK3qZnv3jA\nwwxtMpmTXx9K9UqAJxvtCgpTlljF8nG0cZ0FRT1ciQKBgQD7e/9fWbSB4nwdfkJ/\nSR4tbqkhc1h8ywgoGKMDGPIPBxPH9OhzPv+2l9wj2hdYV7lvuWCl2z9WKjw8cnbE\nJfoNM13SCOV9o/yHnOgIlxIUcbzF61m0yeOtkCDDISklK2cZNSJC9m+UzU0WZZ2w\nwpRcc0RvEkCPp9fox3RWfDCSlQKBgQC3kEbaG/QbRhkgZqllyf79m5vKTJrs1eci\ncepltFnNtOzGEAdg5Es7lXNum2tz0IWaU++bOCZPSW/u+VQeEqfQ4xACw28HMhSB\nzRrFsUwjKU1bs5OiQFWuYKOMMg49o1IpYyQpfvWQcp5Xdc6wyo9f49Le1ZkOst1D\n7UL1ZHX63wKBgQCse3ZCWo9ASitgOxm2nVqSRITByY/WP5Z/ka40UKasgekiSqon\naP0PqgY1nL5IPBqWMynDd6VwHpWjy8oDbBydcy6VAL8NtixcgtRuF9cxqHSVtn6X\nTaTXhLPDwXmr4aHbmyK9lLIg99I4W0eVVU9WPUShfX5ESRT/tdToAFN8JQKBgDt/\n9adfJjns99oLzN7kodWcqdviBtm74AbHO/4pfm5yNclhirK6bTRsFhWFJUhOD/Bd\nQq5iffB3UmP4x25UB7dq0lbC+GsxrXoBfKsV9CL1kVCnHbSa++rhAkJAO2N5W/l0\nXFVjBMAElxSsaAngLqcbVs/KFqmwCo6pCmo2XROrAoGAH5Ge4HvXiq5Vk9JSSWgg\n6HcKRj295rMsfmeqvP0j4+kGnpRzBNLCelzay1T2aUOsQHRyxzT7MRZuEs/jLA0o\nMfBZQVn9Yzb6EzyhKLpYLoOUCSTrfcQmp7B9XQJXbniUshYAUHCPGXwY1kusUsVy\nHJH6BAqeYfoiU1RQ5SF96n8=\n-----END PRIVATE KEY-----\n",
-  "client_email": "machinelearningapp@smc-ams.iam.gserviceaccount.com",
-  "client_id": "103765748437992785459",
-  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-  "token_uri": "https://oauth2.googleapis.com/token",
-  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/machinelearningapp%40smc-ams.iam.gserviceaccount.com",
-  "universe_domain": "googleapis.com"
+
 }
